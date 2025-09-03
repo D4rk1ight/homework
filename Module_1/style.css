@@ -1,0 +1,19 @@
+h1 {
+    background: linear-gradient(to right, rgb(255, 0, 0), #44fe58 70%, white);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+h1:hover {
+    opacity: 0;
+}
+/* 
+.hidden-text {
+    display: none;
+}
+
+.hidden-text:hover {
+    display: inline;
+} */
