@@ -1,0 +1,27 @@
+header{
+    background: #ffa600e0;
+    height: 60px;
+}
+
+header li {
+    display: inline-block;
+}
+
+.quote {
+    background: antiquewhite;
+}
+
+cite {
+    font-style: normal;
+}
+footer {
+    height: 300px;
+    background: rgba(105, 6, 226, 0.559);
+    color: white;
+    margin-top: 20px;
+}
+
+
+footer a {
+    color: white;
+}
