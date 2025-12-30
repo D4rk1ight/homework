@@ -1,0 +1,118 @@
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 47px 0 51.5px;
+    border-bottom: 1px solid #ffffff80;
+
+}
+.header__logo {
+    max-height: 37.5px;
+}
+.nav {
+    
+}
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.nav__item {
+}
+.nav__link {
+    font-family: var(--second-family);
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    transition: var(--transition);
+}
+
+.nav__link::before {
+    content: "";
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+
+
+.nav__link:hover::before {
+    display: block;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: -3px;
+    left: -13px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    opacity: 1;
+}
+
+
+
+.aside__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+}
+
+
+.aside__item span {
+    position: relative;
+}
+
+.aside__item span,
+.aside__item span::before,
+.aside__item span::after {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--general-text);
+    transition: var(--transition);
+}
+
+.aside__item span::before,
+.aside__item span::after {
+    height: 3px;
+    content: "";
+    position: absolute;
+}
+
+.aside__item span::before {
+    top: -10px;
+}
+
+.aside__item span::after {
+    bottom: -10px;
+}
+
+.burger-icon {
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+}
+
+.body--opened-menu .aside__item span {
+    background: transparent;
+}
+
+
+.body--opened-menu .aside__item span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.body--opened-menu .aside__item span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+
+.power-intro__img img {
+    overflow: hidden;
+    object-fit: cover;
+
+}

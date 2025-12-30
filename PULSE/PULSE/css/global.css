@@ -1,0 +1,69 @@
+:root {
+    --general-text: #fff;
+    --accent-text: #1f1711;
+    --general-bg: #141414;
+    --accent-bg: #FFE0CB;
+    --second-bg: #e3e3de;
+    --accent-color: #f47521;
+    --second-accent-color: #ceaad0;
+    --footer-text: #a6a6a6 ;
+    --transition: all .4s;
+    --border-radius: 50px;
+    --input: #ac907a;
+    --font-family: 'Oswald', sans-serif;
+    --second-family: 'Archivo', sans-serif;
+    --swiper-pagination-progressbar-bg-color: var(--accent-color);
+
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.5vw;
+}
+
+
+.body {
+    font-family: var(--font-family), "Arial", sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    /* line-height: 1.69; */
+    background: var(--general-bg);
+    color: var(--general-text);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body--opened-menu {
+    overflow: hidden;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1700px;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+.title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 50px;
+    color: #fff;
+}

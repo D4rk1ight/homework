@@ -1,0 +1,73 @@
+/* ========= FIRST FAMILY */
+
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Regular.woff2') format('woff2'),
+        url('../fonts/Oswald-Regular.woff') format('woff'),
+        url('../fonts/Oswald-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-Medium.woff2') format('woff2'),
+        url('../fonts/Oswald-Medium.woff') format('woff'),
+        url('../fonts/Oswald-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('../fonts/Oswald-SemiBold.woff2') format('woff2'),
+        url('../fonts/Oswald-SemiBold.woff') format('woff'),
+        url('../fonts/Oswald-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+/*======== SECOND FAMILY==============*/
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Regular.woff2') format('woff2'),
+        url('../fonts/Archivo-Regular.woff') format('woff'),
+        url('../fonts/Archivo-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Medium.woff2') format('woff2'),
+        url('../fonts/Archivo-Medium.woff') format('woff'),
+        url('../fonts/Archivo-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-SemiBold.woff2') format('woff2'),
+        url('../fonts/Archivo-SemiBold.woff') format('woff'),
+        url('../fonts/Archivo-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../fonts/Archivo-Bold.woff2') format('woff2'),
+        url('../fonts/Archivo-Bold.woff') format('woff'),
+        url('../fonts/Archivo-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
