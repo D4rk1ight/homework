@@ -1,0 +1,23 @@
+.page__body {
+  background-color:antiquewhite;
+  font-size: 60px;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+.red-color {
+  color: rgba(0, 0, 128, 0.514);
+}
+
+.element--hidden {
+  display: none;
+}
