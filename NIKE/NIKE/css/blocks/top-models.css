@@ -1,0 +1,117 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.top-models__title-accent {
+  color: var(--accent-color);
+}
+.top-models__list {
+  --shadow-accent-glow: 0 0 20px 6px var(--accent-glow-color);
+
+  display: -ms-grid;
+
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+}
+
+.top-models__list article {
+  min-height: 204px;
+  border: 2px solid var(--accent-color);
+  border-radius: var(--border-radius);
+  -webkit-box-shadow:
+    var(--shadow-accent-glow),
+    inset var(--shadow-accent-glow);
+  box-shadow:
+    var(--shadow-accent-glow),
+    inset var(--shadow-accent-glow);
+}
+.top-models__card {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 11px;
+  -webkit-transition: color var(--transition-time);
+  -o-transition: color var(--transition-time);
+  transition: color var(--transition-time);
+}
+
+@media (width <=1024px) {
+  .top-models__card {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media (width >567px) {
+  .top-models__card {
+    padding: 30px;
+  }
+}
+@media (width <=567px) {
+  .top-models__card {
+    gap: 10px;
+    padding: 20px;
+  }
+}
+
+.top-models__card-details {
+  -ms-flex-preferred-size: 139px;
+  flex-basis: 139px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.top-models__card-link {
+  width: 24px;
+  height: 24px;
+}
+.top-models__card-link-icon {
+  stroke: currentColor;
+}
+
+.top-models__card-title,
+.top-models__card-link-icon {
+  color: currentColor;
+  -webkit-transition: color var(--transition-time);
+  -o-transition: color var(--transition-time);
+  transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .top-models__card:hover .top-models__card-details {
+    color: var(--accent-color);
+  }
+}
+
+.top-models__card-img {
+  -ms-flex-preferred-size: 190px;
+  flex-basis: 190px;
+  margin-top: auto;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+}
+
+@media (width <567px) {
+  .top-models__card-img img {
+    max-width: 156px;
+  }
+}
