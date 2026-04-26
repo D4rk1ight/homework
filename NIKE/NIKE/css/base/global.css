@@ -10,7 +10,6 @@
 
 .page__body {
   min-width: 375px;
-  min-height: 250vh;
   background-color: var(--bg-color);
 }
 

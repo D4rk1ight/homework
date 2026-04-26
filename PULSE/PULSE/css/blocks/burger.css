@@ -1,0 +1,30 @@
+@media (width <=1024px) {
+  .burger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--layer-2);
+  }
+}
+
+
+.burger__icon-menu {
+  display: block;
+}
+
+.burger__icon-cross {
+  display: none;
+}
+
+
+.burger--open .burger__icon-menu {
+  display: none;
+}
+
+.burger--open .burger__icon-cross {
+  display: block;
+  width: 30px;
+  height: 30px;
+  transform: scale(1.3);
+}

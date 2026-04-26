@@ -1,0 +1,39 @@
+:root {
+  /* font-family  */
+  --font-family: "Oswald", sans-serif;
+  --second-family: "Archivo", sans-serif;
+
+  /* colors  */
+  --main-color: #fff;
+  --main-glow-color: #ffffff4d;
+  --accent-color: #f47521;
+  --accent-glow-color: #1212104d;
+  --second-color: #c9c69b;
+  --bg-color: #141414;
+  --disabled-color: #5d5d56;
+  --disabled-glow-color: #5d5d564d;
+  --shadow-color: #181817;
+  --overlay: linear-gradient(rgba(30, 30, 30, 0.9), #000 1810%);
+
+  /* shadows */
+  --shadow-glow: 0 0 6px 2px var(--main-glow-color);
+  --shadow-accent-glow: 0 0 6px 2px var(--accent-glow-color);
+  --shadow-disabled-glow: 0 0 6px 2px var(--disabled-glow-color);
+
+  /* container */
+  --container-width: 1708px;
+  --container-padding: 15px;
+
+  /* transitions */
+  --transition-time: 0.3s;
+
+  /* layers */
+  --layer-negative: -1;
+  --layer-0: 0;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+
+  /* border */
+  --border-radius: 12px;
+}
