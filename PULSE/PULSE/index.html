@@ -41,7 +41,7 @@
               <a class="menu__link" href="#collections">COLLECTIONS</a>
             </li>
             <li class="menu__item hover-before">
-              <a class="menu__link" href="#contact-us">CONTACT US</a>
+              <a class="menu__link" href="#contacts">CONTACT US</a>
             </li>
           </ul>
         </nav>
@@ -87,13 +87,94 @@
       </div>
     </header>
     <main class="main"></main>
-    <div class="footer">
+    <footer class="footer">
       <div class="footer__container container">
-        <a class="footer_logo" href="#">
-          <img src="./icons/logo.svg" alt="" />
-        </a>
-        <h3 class="footer__title hover-before">POWER FROM WITHIN</h3>
+        <div class="footer__info">
+          <a class="footer__logo" href="#">
+            <img src="./icons/logo.svg" alt="логотип фитнесс центра" />
+          </a>
+          <h3 class="footer__title">POWER FROM WITHIN</h3>
+        </div>
+        <div class="footer__content">
+          <div class="footer__contacts contacts" id="contacts">
+            <p class="contacts__title text-disabled text-semiBold">
+              contacts US
+            </p>
+            <a class="contacts__link" href="mailto:hello@pulse.com"
+              >hello@pulse.com</a
+            >
+            <a class="contacts__link" href="tel:+79076838196">+907 683 8196</a>
+            <div class="contacts__socials socials">
+              <p class="socials__title text-disabled">FOLLOW US</p>
+              <ul class="social__list">
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg width="20" height="20">
+                      <use href="./icons/socials.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg width="20" height="20">
+                      <use href="./icons/socials.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg width="20" height="20">
+                      <use href="./icons/socials.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__cols">
+            <div class="footer__location">
+              <p class="footer__col-text text-disabled text-semiBold">
+                OUR LOCATION
+              </p>
+              <h3 class="footer__col-title text-regular">Hawaii</h3>
+              <address class="footer__col-address text-disabled">
+                <a class="footer__col-link" href="#">
+                  828 Timbercrest Road, Healy City, AK 99743
+                </a>
+              </address>
+              <h3 class="footer__col-title text-regular">New York</h3>
+              <address class="footer__col-address">
+                <a class="footer__col-link text-disabled" href="#">
+                  828 Timbercrest Road, Healy City, AK 99743
+                </a>
+              </address>
+            </div>
+            <div class="footer__hours">
+              <p class="footer__col-text text-disabled text-semiBold">
+                OPENING HOURS
+              </p>
+              <h3 class="footer__col-title text-regular">Monday-Friday</h3>
+              <p class="footer__col-text text-disabled">
+                Our doors are open 06:00 - 22:00
+              </p>
+              <h3 class="footer__col-title text-regular">Weekends</h3>
+              <p class="footer__col-text text-disabled">
+                Our doors are open 10:00 - 21:00
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+      <div class="footer__copy">
+        <div class="container">
+          <p>
+            Copyright<strong class="footer__copy-strong">
+              Dotcreativemarket</strong
+            >, All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

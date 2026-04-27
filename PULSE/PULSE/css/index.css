@@ -10,6 +10,8 @@
 @import "./blocks/burger.css";
 @import "./blocks/hover-before.css";
 @import "./blocks/footer.css";
+@import "./blocks/contacts.css";
+@import "./blocks/socials.css";
 
 .main {
   min-height: 40vh;

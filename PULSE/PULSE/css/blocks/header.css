@@ -13,7 +13,7 @@
   padding-top: 47px;
   padding-bottom: 51px;
 
-  border-bottom: 1px solid #ffffff80;
+  border-bottom: var(--border-bottom);
 }
 .header__logo {
   flex-shrink: 0;

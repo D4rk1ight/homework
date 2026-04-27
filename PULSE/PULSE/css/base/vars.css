@@ -8,7 +8,7 @@
   --main-glow-color: #ffffff4d;
   --accent-color: #f47521;
   --accent-glow-color: #1212104d;
-  --second-color: #c9c69b;
+  --second-color: #a6a6a6;
   --bg-color: #141414;
   --disabled-color: #5d5d56;
   --disabled-glow-color: #5d5d564d;
@@ -34,6 +34,7 @@
   --layer-2: 2;
   --layer-3: 3;
 
-  /* border */
+  /* border- */
   --border-radius: 12px;
+  --border-bottom: 1px solid #ffffff80;
 }

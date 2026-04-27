@@ -1,0 +1,33 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  /* row-gap: 4px; */
+}
+.contacts__title {
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.contacts__link {
+  font-weight: 400;
+  font-size: 42px;
+  margin-bottom: 4px;
+  transition: color var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  
+  .contacts__link:hover {
+    color: var(--accent-color);
+  }
+  
+}
+
+.contacts__link:last-of-type {
+  margin-bottom: 47px;
+}
+
+@media (width <768px) {
+  .contacts__link:last-of-type {
+  margin-bottom: 20px;
+}
+}
