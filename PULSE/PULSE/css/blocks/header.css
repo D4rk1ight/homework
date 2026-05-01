@@ -2,8 +2,7 @@
   /* position: fixed; */
   inset: 0;
 }
-.container {
-}
+
 .header__container {
   position: relative;
   display: flex;
@@ -74,8 +73,5 @@
   }
 }
 
-.header__cart {
-}
-.header__search {
-}
+
 

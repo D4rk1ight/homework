@@ -1,0 +1,120 @@
+.container {
+}
+.hero__title {
+  line-height: 0.98;
+  font-weight: 600;
+}
+
+.hero__container {
+  position: relative;
+  /* overflow: hidden; */
+  overflow-x: clip;
+}
+
+@media (width >768px) {
+  .hero__container {
+    padding-top: 70px;
+  }
+}
+@media (width <=768px) {
+  .hero__container {
+    padding-top: 35px;
+  }
+}
+
+.hero__title-line {
+  display: block;
+  white-space: nowrap;
+  font-size: clamp(64px, 9vw, 198px);
+}
+
+.hero__within {
+  position: relative;
+  display: inline-block;
+  font-size: clamp(64px, 9vw, 198px);
+}
+
+.hero__within-outline {
+  position: absolute;
+  left: 5.44rem;
+  top: -6.94rem;
+  /* left: 87px;
+  top: -111px; */
+  /* min-width 375px max-width 1710px */
+  font-size: clamp(112px, 19.2vw, 397px);
+  -webkit-text-stroke: 3px gray;
+  color: transparent;
+  z-index: var(--layer-negative);
+  white-space: nowrap;
+}
+
+@media (width <=1024px) {
+  .hero__within {
+    font-size: clamp(64px, 9vw, 198px);
+  }
+
+  .hero__within-outline {
+    /* font-size: clamp(64px, 9vw, 198px); */
+    left: 2.94rem;
+    top: -3.84rem;
+  }
+}
+
+@media (width <= 578px) {
+  .hero__within-outline {
+    left: 1.5rem;
+    top: -2rem;
+    font-size: clamp(80px, 25vw, 112px);
+    -webkit-text-stroke: 2px gray;
+  }
+}
+
+.hero__img {
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__barbell {
+  position: relative;
+}
+
+.hero__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+  position: absolute;
+  /* isolation: isolate; */
+  z-index: 1;
+  left: 50%;
+  top: -37px;
+  transform: translate(-50%, 0);
+  z-index: var(--layer-1);
+  /* max-width: 122px;
+  width: 100%;
+  max-height: 122px;
+  height: 100%; */
+  width: clamp(57px, 7vw, 122px);
+  height: clamp(57px, 7vw, 122px);
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  color: var(--bg-color);
+  transition: color var(--transition-time);
+}
+
+.hero__button:focus-visible {
+  outline: 2px solid var(--bg-color);
+}
+
+.hero__button-icon {
+  width: 50%;
+  height: 50%;
+}
+
+@media (any-hover: hover) {
+  .hero__button:hover {
+    color: var(--main-color);
+  }
+}

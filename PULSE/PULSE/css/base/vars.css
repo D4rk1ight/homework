@@ -10,6 +10,7 @@
   --accent-glow-color: #1212104d;
   --second-color: #a6a6a6;
   --bg-color: #141414;
+  --bg-color-2: #e3e3de;
   --disabled-color: #5d5d56;
   --disabled-glow-color: #5d5d564d;
   --shadow-color: #181817;
@@ -37,4 +38,5 @@
   /* border- */
   --border-radius: 12px;
   --border-bottom: 1px solid #ffffff80;
+  --border-right: 2px solid #000;
 }

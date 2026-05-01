@@ -1,0 +1,48 @@
+.hero__product  {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+}
+
+
+.product__content {
+}
+.product__title {
+}
+.text-semiBold {
+}
+.title-lg {
+}
+.product__title-accent {
+}
+.product__subtitle {
+}
+.text-medium {
+}
+.product__text {
+}
+.product__button {
+}
+.product__protein {
+}
+.product__supplements {
+}
+.product__slider {
+}
+.swiper {
+}
+.slider-wrapper {
+}
+.slider-decor {
+}
+.swiper-slide {
+}
+.product__slide {
+}
+.product__slide-img {
+}
+.product__slider-button {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}

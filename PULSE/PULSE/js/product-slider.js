@@ -1,6 +1,6 @@
 export const sizesSlider = () => {
   new Swiper(".product__slider", {
-    // direction: "horizontal",
+    direction: "vertical",
     loop: true,
 
     slidesPerView: "auto",

@@ -1,22 +1,19 @@
 
-.socials {
-}
 .socials__title {
   margin-bottom: 24px;
 }
-.social__list {
+.socials__list {
   display: flex;
   gap: 45px;
 }
-.social__item {
-}
 
-.social__link {
+
+.socials__link {
   transition: color var(--transition-time);
 }
 
 @media (any-hover: hover) {
-  .social__link:hover {
+  .socials__link:hover {
     color: var(--accent-color);
   }
 }

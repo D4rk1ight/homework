@@ -1,0 +1,111 @@
+.hero__benefits {
+  background-color: var(--bg-color-2);
+  max-width: 1920px;
+  margin-inline: auto;
+}
+.benefits {
+}
+.hero__benefits {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (width <=768px) {
+  .hero__benefits {
+    grid-template-columns: 1fr;
+  }
+}
+
+.benefits__item {
+  position: relative;
+  font-family: var(--second-family);
+  border-right: var(--border-right);
+  isolation: isolate;
+}
+
+/* hover with linear-gradient */
+.benefits__item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: var(--layer-negative);
+  background-image: linear-gradient(
+    to top,
+    #e3e3de,
+    #dedab5,
+    #dfce8c,
+    #e2c161,
+    #e8ac7f
+  );
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity var(--transition-time),
+    visibility var(--transition-time);
+}
+
+@media (width <=768px) {
+  .benefits__item {
+    grid-column: span 3;
+    border-right: none;
+    border-bottom: var(--border-right);
+  }
+}
+
+@media (any-hover: hover) {
+  .benefits__item:hover::before {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Hover with height animated */
+/* .benefits__item::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  background-color: #267c9657;
+  height: 0;
+  transition: height var(--transition-time) ease;
+}
+
+@media (any-hover: hover) {
+  .benefits__item:hover::before {
+    height: 100%;
+  }
+} */
+
+.benefits__item-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /* min-width 375px max-width 1920px */
+  padding: clamp(20px, 0.009rem + 2.915vi, 56px);
+}
+
+.benefits__item span {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  margin-bottom: 4px;
+}
+.benefits__title {
+  color: var(--bg-color);
+  margin-bottom: clamp(60px, 8.7vw, 176px);
+}
+
+.benefits__actions {
+  display: flex;
+  justify-content: space-between;
+  color: var(--bg-color);
+}
+
+.benefits__actions p {
+  font-weight: 700;
+  line-height: 1.44;
+  letter-spacing: 0.1em;
+  font-family: var(--second-family);
+}

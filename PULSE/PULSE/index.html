@@ -86,12 +86,174 @@
         </div>
       </div>
     </header>
-    <main class="main"></main>
+    <main class="main">
+      <section class="hero hero__container">
+        <div class="container">
+          <!-- <h1 class="hero__title">
+            <span class="hero__title-main">POWER
+               FROM WITHIN</span>
+            <span class="hero__title-overlay">WITHIN</span>
+          </h1> -->
+          <h1 class="hero__title">
+            <span class="hero__title-line">POWER</span>
+            <span class="hero__title-line">
+              FROM
+              <span class="hero__within">
+                <span class="hero__within-fill">WITHIN</span>
+                <span class="hero__within-outline" aria-hidden="true"
+                  >WITHIN</span
+                >
+              </span>
+            </span>
+          </h1>
+        </div>
+        <div class="hero__barbell">
+          <button class="hero__button" aria-label="Узнать подробнее">
+            <svg
+              width="57"
+              height="57"
+              class="hero__button-icon"
+              aria-hidden="true"
+            >
+              <use href="./icons/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+          <picture class="hero__img">
+            <source srcset="./img/crossbar.webp" type="image/webp" />
+            <img
+              src="./img/crossbar.jpg"
+              width="1920"
+              height="1280"
+              alt="мужчина на перекладине"
+            />
+          </picture>
+        </div>
+
+        <section class="hero__benefits benefits" aria-label="Наши преимущества">
+          <article class="benefits__item">
+            <a
+              class="benefits__item-link"
+              href="#"
+              aria-label="Улучшить силовые показатели"
+            >
+              <span>FITNESS</span>
+              <h2 class="benefits__title text-semiBold title-xs">
+                IMPROVE YOUR STRENGH
+              </h2>
+              <div class="benefits__actions">
+                <p>GET STARTED</p>
+                <svg width="21" height="21">
+                  <use
+                    class="benefits__actions-icon"
+                    href="./icons/sprite.svg#arrow-sm"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+          </article>
+          <article class="benefits__item">
+            <a
+              class="benefits__item-link"
+              href="#"
+              aria-label="Получить лучшую форму"
+            >
+              <span>BODYBUILDING</span>
+              <h2 class="benefits__title text-semiBold title-xs">
+                GET BEST BODY SHAPES
+              </h2>
+              <div class="benefits__actions">
+                <p>GET STARTED</p>
+                <svg width="21" height="21">
+                  <use
+                    class="benefits__actions-icon"
+                    href="./icons/sprite.svg#arrow-sm"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+          </article>
+          <article class="benefits__item">
+            <a
+              class="benefits__item-link"
+              href="#"
+              aria-label="Лучшие планы питания"
+            >
+              <span>CROSSFIT</span>
+              <h2 class="benefits__title text-semiBold title-xs">
+                THE BEST DIETARY PLANS
+              </h2>
+              <div class="benefits__actions">
+                <p>GET STARTED</p>
+                <svg width="21" height="21">
+                  <use
+                    class="benefits__actions-icon"
+                    href="./icons/sprite.svg#arrow-sm"
+                  ></use>
+                </svg>
+              </div>
+            </a>
+          </article>
+        </section>
+
+        <section class="hero__product product">
+          <div class="product__content">
+            <h2 class="product__title text-semiBold title-lg">
+              BE <strong class="product__title-accent">BETTER</strong>
+            </h2>
+            <h3 class="product__subtitle text-medium">OUR STORY</h3>
+            <p class="product__text">
+              Ac nec est ultrices varius morbi et non. Donec quam sed eget
+              purus. Elementum sed malesuada senectus feugiat faucibus morbi a
+              neque ultricies. Nisl maecenas eget ultricies in lobortis.
+            </p>
+            <h3 class="product__subtitle text-medium">OUR MISSION</h3>
+            <p class="product__text">
+              Ac nec est ultrices varius morbi et non. Donec quam sed eget
+              purus. Elementum sed malesuada senectus feugiat.
+            </p>
+            <button class="product__button">READ MORE</button>
+            <div class="product__protein">
+              <span>24G</span>
+              <div>PROTEIN</div>
+            </div>
+            <div class="product__supplements">
+              <span>5.5G</span>
+              <div>BCAAS</div>
+            </div>
+          </div>
+
+          <div class="product__slider swiper">
+            <div class="slider-wrapper">
+              <div class="slider-decor"></div>
+              <div class="swiper-slide product__slide">
+                <div class="product__slide-img">
+                  <picture>
+                    <img
+                      src="./img/product-slider-1.png"
+                      width="476"
+                      height="679"
+                      alt="Банка Whey protein 100% pure"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <button class="product__slider-button swiper-button-prev">1</button>
+            <button class="product__slider-button swiper-button-next">1</button>
+          </div>
+        </section>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__info">
           <a class="footer__logo" href="#">
-            <img src="./icons/logo.svg" alt="логотип фитнесс центра" />
+            <img
+              src="./icons/logo.svg"
+              width="269"
+              height="51"
+              alt="логотип фитнесс центра"
+            />
           </a>
           <h3 class="footer__title">POWER FROM WITHIN</h3>
         </div>
@@ -103,27 +265,27 @@
             <a class="contacts__link" href="mailto:hello@pulse.com"
               >hello@pulse.com</a
             >
-            <a class="contacts__link" href="tel:+79076838196">+907 683 8196</a>
+            <a class="contacts__link" href="tel:+79076838196">+79076838196</a>
             <div class="contacts__socials socials">
               <p class="socials__title text-disabled">FOLLOW US</p>
-              <ul class="social__list">
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg width="20" height="20">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a class="socials__link" href="#" aria-label="Наш facebook">
+                    <svg width="20" height="20" aria-hidden="true">
                       <use href="./icons/socials.svg#facebook"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg width="20" height="20">
+                <li class="socials__item">
+                  <a class="socials__link" href="#" aria-label="Наш twitter">
+                    <svg width="20" height="20" aria-hidden="true">
                       <use href="./icons/socials.svg#twitter"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg width="20" height="20">
+                <li class="socials__item">
+                  <a class="socials__link" href="#" aria-label="Наш instagram">
+                    <svg width="20" height="20" aria-hidden="true">
                       <use href="./icons/socials.svg#instagram"></use>
                     </svg>
                   </a>

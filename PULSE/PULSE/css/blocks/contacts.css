@@ -9,7 +9,7 @@
 }
 .contacts__link {
   font-weight: 400;
-  font-size: 42px;
+  font-size: clamp(32px, 5vw, 42px);
   margin-bottom: 4px;
   transition: color var(--transition-time);
 }

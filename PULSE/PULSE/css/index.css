@@ -12,7 +12,6 @@
 @import "./blocks/footer.css";
 @import "./blocks/contacts.css";
 @import "./blocks/socials.css";
+@import "./blocks/hero.css";
+@import "./blocks/benefits.css";
 
-.main {
-  min-height: 40vh;
-}
