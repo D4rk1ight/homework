@@ -11,6 +11,11 @@ export const sizesSlider = () => {
       nextEl: ".product__slider-button--next",
     },
 
+    pagination: {
+      el: "swiper-pagination",
+      type: "bullets",
+    },
+
     mousewheel: {
       forceToAxis: true,
     },

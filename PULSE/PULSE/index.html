@@ -89,11 +89,6 @@
     <main class="main">
       <section class="hero hero__container">
         <div class="container">
-          <!-- <h1 class="hero__title">
-            <span class="hero__title-main">POWER
-               FROM WITHIN</span>
-            <span class="hero__title-overlay">WITHIN</span>
-          </h1> -->
           <h1 class="hero__title" aria-label="POWER FROM WITHIN">
             <span class="hero__title-line">POWER</span>
             <span class="hero__title-line">
@@ -194,8 +189,10 @@
             </a>
           </article>
         </section>
+      </section>
 
-        <section class="hero__product product">
+      <section class="product">
+        <div class="container product__container">
           <div class="product__content">
             <h2 class="product__title text-semiBold title-lg">
               BE <strong class="product__title-accent">BETTER</strong>
@@ -211,25 +208,29 @@
               Ac nec est ultrices varius morbi et non. Donec quam sed eget
               purus. Elementum sed malesuada senectus feugiat.
             </p>
-            <button class="product__button">READ MORE</button>
-            <div class="product__protein">
-              <span>24G</span>
-              <div>PROTEIN</div>
-            </div>
-            <div class="product__supplements">
-              <span>5.5G</span>
-              <div>BCAAS</div>
-            </div>
+            <a href="#" class="product__button">READ MORE</a>
           </div>
-
           <div class="product__slider swiper">
             <div class="slider-wrapper">
-              <div class="slider-decor"></div>
+              <div class="product__protein">
+                <div class="product__protein-accent">24G</div>
+                <div>PROTEIN</div>
+              </div>
+              <div class="product__supplements">
+                <div class="product__supplements-accent">5.5G</div>
+                <div class="product__supplements-text">BCAAS</div>
+              </div>
+
               <div class="swiper-slide product__slide">
                 <div class="product__slide-img">
                   <picture>
+                    <source
+                      srcset="./img/product-slider-1.webp"
+                      type="image/webp"
+                    />
                     <img
                       src="./img/product-slider-1.png"
+                      loading="lazy"
                       width="476"
                       height="679"
                       alt="Банка Whey protein 100% pure"
@@ -238,10 +239,14 @@
                 </div>
               </div>
             </div>
-            <button class="product__slider-button swiper-button-prev">1</button>
-            <button class="product__slider-button swiper-button-next">1</button>
+            <div class="swiper-pagination product__slider-list">
+              <button class="product__slider-button" disabled>1</button>
+              <button class="product__slider-button" disabled>2</button>
+              <button class="product__slider-button">3</button>
+              <button class="product__slider-button" disabled>4</button>
+            </div>
           </div>
-        </section>
+        </div>
       </section>
     </main>
     <footer class="footer">
