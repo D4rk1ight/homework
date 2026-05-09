@@ -29,11 +29,13 @@ try {
     headerFixed,
   );
 
+  sizesSlider()
+
   new Modal({
     PAGE_BODY: "page__body",
     PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
   });
-  sizesSlider();
+
   sizes();
 } catch (error) {
   console.error(error);

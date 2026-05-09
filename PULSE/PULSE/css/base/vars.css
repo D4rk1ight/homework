@@ -13,7 +13,7 @@
   --bg-color-2: #e3e3de;
   --disabled-color: #5d5d56;
   --disabled-glow-color: #5d5d564d;
-  --text-color:#979797; 
+  --text-color: #979797;
   --shadow-color: #181817;
   --overlay: linear-gradient(rgba(30, 30, 30, 0.9), #000 1810%);
 
@@ -40,4 +40,11 @@
   --border-radius: 12px;
   --border-bottom: 1px solid #ffffff80;
   --border-right: 2px solid #000;
+
+  /* swiper */
+
+  --swiper-pagination-right: -70px;
+
+  --swiper-pagination-bullet-width: 14px;
+  --swiper-pagination-bullet-height: 14px;
 }

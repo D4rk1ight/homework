@@ -1,23 +1,33 @@
 export const sizesSlider = () => {
-  new Swiper(".product__slider", {
+  new Swiper(".swiper", {
     direction: "vertical",
+
     loop: true,
+    // autoHeight: true,
 
-    slidesPerView: "auto",
-    centeredSlides: true,
-
-    navigation: {
-      prevEl: ".product__slider-button--prev",
-      nextEl: ".product__slider-button--next",
-    },
+    slidesPerView: 1,
+    // centeredSlides: true,
 
     pagination: {
-      el: "swiper-pagination",
+      el: ".product__pagination-list",
       type: "bullets",
+      clickable: true,
+
+      renderBullet: function (index, className) {
+        return `<span class="${className}">${index + 1}</span>`;
+      },
     },
 
     mousewheel: {
       forceToAxis: true,
+      mousewheel: true,
     },
   });
+
+  console.log("Swiper init");
 };
+
+const inintHorizontal = () => {
+  console.log("Directon has been changed to horizontal");
+};
+
