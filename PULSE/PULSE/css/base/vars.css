@@ -43,7 +43,8 @@
 
   /* swiper */
 
-  --swiper-pagination-right: -70px;
+  /* --swiper-pagination-right: -70px; */
+  /* --swiper-pagination-right: clamp(30, -7.375rem + 10vw, 70px); */
 
   --swiper-pagination-bullet-width: 14px;
   --swiper-pagination-bullet-height: 14px;

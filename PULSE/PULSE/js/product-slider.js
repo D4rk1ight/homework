@@ -3,10 +3,18 @@ export const sizesSlider = () => {
     direction: "vertical",
 
     loop: true,
-    // autoHeight: true,
+    autoHeight: true,
 
     slidesPerView: 1,
-    // centeredSlides: true,
+
+    breakpoints: {
+      375: {
+        direction: "horizontal",
+      },
+      1111: {
+        direction: "vertical",
+      },
+    },
 
     pagination: {
       el: ".product__pagination-list",
@@ -16,6 +24,11 @@ export const sizesSlider = () => {
       renderBullet: function (index, className) {
         return `<span class="${className}">${index + 1}</span>`;
       },
+    },
+
+    navigation: {
+      nextEl: ".product__slider-button--next",
+      prevEl: ".product__slider-button--prev",
     },
 
     mousewheel: {
@@ -30,4 +43,3 @@ export const sizesSlider = () => {
 const inintHorizontal = () => {
   console.log("Directon has been changed to horizontal");
 };
-
