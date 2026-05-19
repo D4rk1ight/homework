@@ -19,7 +19,6 @@
 .benefits__item {
   position: relative;
   font-family: var(--second-family);
-  border-right: var(--border-right);
   isolation: isolate;
 }
 
@@ -47,8 +46,16 @@
 @media (width <=768px) {
   .benefits__item {
     grid-column: span 3;
-    border-right: none;
-    border-bottom: var(--border-right);
+  }
+
+  .benefits__item:nth-child(-n + 2) {
+    border-bottom: 2px solid var(--bg-color);
+  }
+}
+
+@media (width >768px) {
+  .benefits__item:nth-child(-n + 2) {
+    border-right: 2px solid var(--bg-color);
   }
 }
 

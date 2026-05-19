@@ -9,7 +9,7 @@
 @media (width >768px) {
   .product__container {
     padding-top: 143px;
-    padding-bottom: 179px;
+    padding-bottom: 117px;
   }
 }
 
@@ -251,9 +251,6 @@
     display: none;
   }
 
-  /* .swiper {
-    height: 678px;
-  } */
 }
 
 

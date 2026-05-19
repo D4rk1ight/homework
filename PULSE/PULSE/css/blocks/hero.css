@@ -104,10 +104,7 @@
   transition: color var(--transition-time);
 }
 
-.hero__button:focus-visible {
-  outline: 2px solid var(--bg-color);
-}
-
+        
 .hero__button-icon {
   width: 50%;
   height: 50%;

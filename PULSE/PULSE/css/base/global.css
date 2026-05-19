@@ -101,8 +101,8 @@
 a:focus-visible,
 button:focus-visible,
 input:focus {
-  outline: 1px solid var(--accent-color);
-  offset: 2px;
+  outline: 4px solid var(--accent-color);
+  outline-offset: 2px;
 }
 
 img {
