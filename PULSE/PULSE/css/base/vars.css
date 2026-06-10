@@ -16,6 +16,7 @@
   --text-color: #979797;
   --shadow-color: #181817;
   --overlay: linear-gradient(rgba(30, 30, 30, 0.9), #000 1810%);
+  --progress-bar: #7c7c7c;
 
   /* shadows */
   --shadow-glow: 0 0 6px 2px var(--main-glow-color);
@@ -28,6 +29,7 @@
 
   /* transitions */
   --transition-time: 0.3s;
+  --transition-long-time: 2s;
 
   /* layers */
   --layer-negative: -1;

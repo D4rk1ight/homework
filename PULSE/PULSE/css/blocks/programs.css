@@ -1,0 +1,130 @@
+.programs {
+  position: relative;
+  outline: 3px solid;
+  isolation: isolate;
+}
+
+.programs__container::before {
+  content: "";
+  position: absolute;
+  z-index: var(--negative-layer);
+  left: 110px;
+  top: 117px;
+  width: clamp(420px, 45vw, 768px);
+  aspect-ratio: 1;
+
+  background: url("../../img/decor-dots.png") center / contain no-repeat;
+}
+
+@media (width >576px) {
+  .programs__container {
+    padding-top: 103px;
+    padding-bottom: 136px;
+  }
+}
+
+.programs__title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.programs__subtitle {
+  text-align: center;
+  font-family: var(--second-family);
+  line-height: 1.69;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 86px;
+}
+.programs__list {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+}
+.programs__item {
+  flex: 0 1 374px;
+  /* isolation: isolate; */
+}
+
+.programs__link {
+  display: block;
+}
+
+.programs__picture {
+  position: relative;
+  display: block;
+  margin-bottom: 33px;
+}
+.programs__picture::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+
+  /* mix-blend-mode: multiply;
+   */
+
+  background: var(--accent-color);
+  opacity: 0;
+  transition: opacity var(--transition-time) ease;
+  /* z-index: 1; */
+}
+
+@media (any-hover: hover) {
+  .programs__link:hover .programs__picture::before {
+    opacity: 0.5;
+  }
+}
+
+.programs__img {
+  /* outline: 3px solid; */
+}
+
+.programs__meta {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--second-family);
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  color: var(--accent-color);
+  margin-bottom: 4px;
+}
+
+.programs__meta-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+
+.programs__name {
+  margin-bottom: 24px;
+}
+.programs__bar {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--progress-bar);
+  position: relative;
+}
+
+.programs__bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -3px;
+  height: 8px;
+  width: 100%;
+  transform-origin: left;
+  background-color: var(--accent-color);
+
+  transform: scaleX(0);
+  transition: transform var(--transition-long-time) ease-in;
+}
+
+@media (any-hover: hover) {
+  .programs__link:hover .programs__bar::before {
+    transform: scaleX(1);
+  }
+}
