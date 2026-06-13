@@ -11,7 +11,7 @@ export const sizesSlider = () => {
       375: {
         direction: "horizontal",
       },
-      1111: {
+      1172: {
         direction: "vertical",
       },
     },

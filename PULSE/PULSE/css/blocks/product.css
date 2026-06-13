@@ -2,7 +2,8 @@
   position: relative;
   display: flex;
   gap: clamp(30px, 0.26rem + 6.89vw, 122px);
-  background: url("../../img/product-slider/decor.svg") 69% 10%;
+  /* gap: 10px; */
+  background: url("../../img/product-slider/decor.svg") 52% 10%;
   background-repeat: no-repeat;
 }
 
@@ -13,7 +14,7 @@
   }
 }
 
-@media (width <=1110px) {
+@media (width <=1170px) {
   .product__container {
     flex-direction: column;
   }
@@ -28,13 +29,27 @@
 }
 
 .product__content {
-  /* margin-left: 318px; */
+  margin-left: clamp(50px, -1.563rem + 9.77vw, 142px);
   /* min-width 768px max-width 1710px */
-  margin-left: clamp(50px, -2.939rem + 12.63vw, 169px);
+  /* margin-left: clamp(50px, -2.939rem + 12.63vw, 169px); */
   /* margin-left:  clamp(110px, 9.9vw, 169px); */
-  flex: 1 1 auto;
-  /* max-width: 501px; */
+  /* flex: 1 1 auto; */
+  max-width: 501px;
 }
+
+@media (width > 1170px) and (width <=1586px) {
+  .product__content {
+    text-align: center;
+  }
+}
+
+
+@media (width <=1170px) {
+  .product__content {
+    max-width: none;
+  }
+}
+
 .product__title {
   margin-bottom: 17px;
 }
@@ -56,14 +71,14 @@
   margin-bottom: 40px;
 }
 
-@media (width <= 1110px) {
+@media (width <= 1170px) {
   .product__text {
     max-width: 80%;
   }
 }
 
 .product__text:last-of-type {
-  /* min-width 1110px max-width 1710px */
+  /* min-width 1170px max-width 1710px */
   margin-bottom: clamp(55px, -2.113rem + 8vw, 103px);
 }
 
@@ -83,11 +98,12 @@
   height: 100%;
 }
 
-@media (width <= 1110px) {
+@media (width <= 1586px) {
   .product__slider-shell {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: clamp(10px, -2.889rem + 4.81vw, 30px);
   }
 }
 
@@ -100,16 +116,10 @@
   flex: 0 1 645px;
 }
 
-@media (width > 1110px) {
+@media (width > 1586px) {
   .swiper {
-    /* padding-right: 80px; */
+    padding-right: 80px;
     padding-right: clamp(20px, -22.88rem + 26.09vw, 80px);
-  }
-}
-
-@media (width <= 1110px) {
-  .swiper {
-    padding-right: 0;
   }
 }
 
@@ -131,14 +141,14 @@
   /* width: 100%; */
 }
 
-/* @media (width <=1480px) and (width > 1110px) {
+/* @media (width <=1480px) and (width > 1170px) {
   .product__media {
     transform: scale(0.75, clamp(100vw/1480), 1);
     transform-origin: center;
   }
 } */
 
-@media (width <= 1110px) {
+@media (width <= 1586px) {
   .product__media {
     display: flex;
     justify-content: center;
@@ -205,19 +215,25 @@
   max-width: 476px;
 }
 
+@media (width > 1170px) and (width <= 1586px) {
+  .product__slide-img {
+    flex-shrink: 0;
+  }
+}
+
 .product__slide-label {
   position: absolute;
   right: -14%;
   top: 10%;
   /* transform: translateY(-10%); */
-  outline: 5px solid brown;
+  /* outline: 5px solid brown; */
   z-index: 4;
-  height: auto;
-  /* min-width 1110px  max-width 1710px*/
-  width: clamp(100px, -6.584rem + 18.5vw, 211px);
+  /* height: auto; */
+  /* min-width 1170px  max-width 1710px*/
+  /* width: clamp(100px, -6.584rem + 18.5vw, 211px); */
 }
 
-@media (width <= 1110px) {
+@media (width <=1586px) {
   .product__slide-label {
     display: none;
   }
@@ -255,7 +271,7 @@
 }
 
 .product__pagination-list {
-  --swiper-pagination-right: auto;
+  --swiper-pagination-right: -130px;
   --swiper-pagination-left: auto;
 
   top: 50%;
@@ -270,33 +286,29 @@
   z-index: var(--layer-2);
 }
 
-@media (width <= 1480px) {
+@media (width <= 1586px) {
   .swiper-pagination.product__pagination-list {
-    flex-direction: row;
-    left: 50%;
-    top: auto;
-    right: auto;
-    bottom: 0;
-    /* bottom: -50px; */
-    transform: translateX(-50%);
-  }
-}
-
-@media (width >=1110px) {
-  .product__pagination-list {
-    --swiper-pagination-right: -30px;
-  }
-}
-
-@media (width <= 1110px) {
-  .product__pagination-list {
     display: none;
   }
 }
+/* 
+@media (width >=1586px) {
+  .product__pagination-list {
+    --swiper-pagination-right: -30px;
+  }
+} */
 
 .product__slider-button {
+  border: 3px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  flex-shrink: 0;
   --icon-color: currentColor;
-  transition: color var(--transition-time);
+  transition:
+    color var(--transition-time),
+    border-color var(--transition-time);
 }
 
 @media (any-hover: hover) {
@@ -309,8 +321,17 @@
   transform: rotateY(180deg);
 }
 
-@media (width > 1110px) {
+@media (width > 1586px) {
   .product__slider-button {
     display: none;
+  }
+}
+
+@media (width > 1170px) and (width <= 1586px) {
+  .product__slider-button:first-of-type {
+    transform: rotateZ(90deg);
+  }
+  .product__slider-button:last-of-type {
+    transform: rotateZ(-90deg);
   }
 }

@@ -11,7 +11,6 @@
   top: 117px;
   width: clamp(420px, 45vw, 768px);
   aspect-ratio: 1;
-
   background: url("../../img/decor-dots.png") 0% 0% / contain no-repeat;
 }
 
