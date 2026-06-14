@@ -1,24 +1,14 @@
 .programs {
   position: relative;
-  isolation: isolate;
+  /* isolation: isolate; */
 }
 
-.programs__container::before {
-  content: "";
-  position: absolute;
-  z-index: var(--negative-layer);
-  left: 110px;
-  top: 117px;
-  width: clamp(420px, 45vw, 768px);
-  aspect-ratio: 1;
-  background: url("../../img/decor-dots.png") 0% 0% / contain no-repeat;
+.programs__container {
 }
 
-@media (width >576px) {
-  .programs__container {
-    padding-top: 103px;
-    padding-bottom: 136px;
-  }
+.programs__container {
+  padding-top: clamp(35px, 15.9px + 5.09vw, 103px);
+  padding-bottom: clamp(50px, 25.84px + 6.44vw, 136px);
 }
 
 .programs__title {
@@ -37,7 +27,24 @@
   display: flex;
   gap: 45px;
   justify-content: center;
+  flex-wrap: wrap;
+  isolation: isolate;
+  position: relative;
 }
+
+.programs__list::before {
+  position: absolute;
+  display: block;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 767px;
+  width: 767px;
+  background: url("../../img/decor-dots.png") 0% 0%;
+  background-repeat: no-repeat;
+  z-index: var(--negative-layer);
+}
+
 .programs__item {
   flex: 0 1 374px;
   /* isolation: isolate; */
@@ -58,13 +65,9 @@
   position: absolute;
   inset: 0;
 
-  /* mix-blend-mode: multiply;
-   */
-
   background: var(--accent-color);
   opacity: 0;
   transition: opacity var(--transition-time) ease;
-  /* z-index: 1; */
 }
 
 @media (any-hover: hover) {
