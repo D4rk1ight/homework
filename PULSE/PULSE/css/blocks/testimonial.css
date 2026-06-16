@@ -1,0 +1,21 @@
+.testimonial {
+}
+.testimonial__container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+.testimonial__img {
+}
+.testimonial__meta {
+}
+.testimonial__meta-img {
+}
+.testimonial__label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(100px, -6.584rem + 18.5vw, 211px);
+}
