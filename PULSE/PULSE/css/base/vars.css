@@ -5,6 +5,7 @@
 
   /* colors  */
   --main-color: #fff;
+  --main-gray: #ffffffb3; 
   --main-glow-color: #ffffff4d;
   --accent-color: #f47521;
   --accent-glow-color: #1212104d;
@@ -16,6 +17,7 @@
   --text-color: #979797;
   --shadow-color: #181817;
   --overlay: linear-gradient(rgba(30, 30, 30, 0.9), #000 1810%);
+  --overlay-accent: #72320780; 
   --progress-bar: #7c7c7c;
 
   /* shadows */
@@ -32,6 +34,7 @@
   --transition-long-time: 2s;
 
   /* layers */
+  --layer-negative-2: -2; 
   --layer-negative: -1;
   --layer-0: 0;
   --layer-1: 1;

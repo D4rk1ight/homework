@@ -169,13 +169,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-self: center;
   gap: 28px;
   color: var(--bg-color);
   background-color: var(--accent-color);
   width: 100%;
   font-family: var(--second-family);
-  padding: 43px;
+  /*  min-width 375px max-width 1710px*/
+  padding: clamp(20px, 0.846rem + 1.72vw, 43px);
   transition: color var(--transition-time);
 }
 

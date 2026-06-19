@@ -43,6 +43,14 @@ input::-ms-clear {
   display: none;
 }
 
+blockquote,
+q,
+cite {
+  quotes: none;
+  font-style: normal;
+}
+
+
 button {
   cursor: pointer;
   border: none;

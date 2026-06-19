@@ -5,13 +5,125 @@
   justify-content: center;
   align-content: center;
   position: relative;
+  isolation: isolate;
 }
-.testimonial__img {
+
+.testimonial__media,
+.testimonial__review {
+  flex: 0 1 960px;
 }
-.testimonial__meta {
+
+@media (width <=768px) {
+  .testimonial__container {
+    flex-direction: column;
+
+  }
+
+  .testimonial__media,
+  .testimonial__review {
+    flex-basis: auto;
+  }
 }
-.testimonial__meta-img {
+
+.testimonial__review {
+  display: grid;
+  isolation: isolate;
+  place-items: center;
+  /* max-width: 960px; */
+  aspect-ratio: 960 / 832;
 }
+
+.testimonial__bg {
+  display: block;
+  z-index: var(--layer-0);
+  /* height: 100%; */
+}
+
+.testimonial__bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial__content {
+  z-index: var(--layer-1);
+  place-self: center;
+}
+
+.testimonial__bg,
+.testimonial__content {
+  grid-area: 1 / 1;
+}
+
+.testimonial__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: clamp(20px, -3.54rem + 9.98vw, 114px);
+  /* padding-bottom: clamp(15px, -5.738rem + 13.91vw, 146px); */
+  height: 100%;
+}
+
+@media (width <= 768px) {
+  /* min-width 375px max-width 768px */
+  .testimonial__content {
+    padding-top: clamp(20px, -1.732rem + 12.72vw, 70px);
+    padding-bottom: clamp(15px, -6.875rem + 33.33vw, 145px);
+    /* padding-bottom: 0; */
+    justify-content: center;
+  }
+}
+
+.testimonial__quote-icon {
+  width: clamp(48px, 5.26vw, 101px);
+  height: auto;
+  margin-bottom: clamp(24px, 2.865vw, 55px);
+}
+
+@media (width <=768px) {
+  .testimonial__quote-icon {
+    width: clamp(24px, -0.161rem + 13.49vw, 101px);
+  }
+}
+
+.testimonial__quote {
+  /* min-width 768px max-width 1710px */
+  font-size: clamp(20px, -0.533rem + 3.72vw, 55px);
+  margin-bottom: clamp(20px, 2.188vw, 42px);
+  text-align: center;
+  white-space: pre-line;
+  max-width: 589px;
+}
+
+@media (width <=768px) {
+  .testimonial__quote {
+    font-size: clamp(20px, -0.837rem + 8.91vw, 55px);
+  }
+}
+
+.testimonial__quote-decor-line {
+  width: 83px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin-bottom: clamp(28px, 3.385vw, 65px);
+  flex-shrink: 0;
+}
+
+.text-regular {
+}
+.testimonial__author > * {
+  display: block;
+  text-align: center;
+  font-family: var(--second-family);
+}
+.testimonial__author-role {
+  color: var(--main-gray);
+  margin-bottom: 11px;
+}
+.testimonial__author-name {
+  font-size: clamp(22px, 1.563vw, 30px);
+}
+
 .testimonial__label {
   position: absolute;
   left: 50%;
