@@ -1,0 +1,90 @@
+@import "./base/reset.css";
+@import "./base/font.css";
+@import "https://unpkg.com/open-props";
+
+body {
+  background-color: rgba(0, 0, 0, 0.418);
+  font-family: "Metro-font", sans-serif;
+  font-size: 16px;
+  overflow-y: hidden;
+}
+
+.container {
+  width: min(1440px, 100% - 30px);
+  margin: 5vh auto;
+  height: 90vh;
+}
+
+.content {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: 0.18fr 0.82fr;
+  grid-template-rows: 0.1fr 0.8fr 0.1fr;
+  height: 100%;
+  background-color: rgba(112, 109, 109, 0.774);
+  isolation: isolate;
+}
+
+.content > * {
+  background-color: var(--gray-3);
+  padding: 10px;
+  z-index: 1;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+
+  grid-column: 1 / 2;
+  grid-row: 2 / -1;
+
+  background-color: #ff343c;
+  color: rgba(240, 248, 255, 0.904);
+
+  white-space: pre-line;
+  align-content: center;
+  text-align: center;
+}
+
+.nav__logo {
+  display: block;
+  margin-inline: auto;
+  width: 50%;
+  max-width: 90px;
+  min-width: 56px;
+  height: auto;
+}
+
+.main {
+  position: relative;
+  overflow: hidden;
+  grid-column: 2/ -1;
+  grid-row: 2 / 3;
+  place-items: center;
+  /* border: 2px solid rgba(112, 109, 109, 0.774); */
+  border-right: none;
+  align-content: center;
+  background: none ;
+}
+
+.main__bg {
+  display: grid;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  place-items: center;
+}
+
+
+.main__title {
+  position: absolute;
+  z-index: 1;
+  color: #df9090;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 0.2rem; 
+}
+
+
