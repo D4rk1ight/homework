@@ -58,33 +58,29 @@ body {
 }
 
 .main {
+  padding: 0;
+  isolation: isolate;
   position: relative;
   overflow: hidden;
+  place-items: center;
+  align-content: center;
+  background: none;
   grid-column: 2/ -1;
   grid-row: 2 / 3;
-  place-items: center;
-  /* border: 2px solid rgba(112, 109, 109, 0.774); */
-  border-right: none;
-  align-content: center;
-  background: none ;
 }
 
+
 .main__bg {
-  display: grid;
   position: absolute;
   inset: 0;
   z-index: 0;
-  place-items: center;
 }
 
-
 .main__title {
-  position: absolute;
+  position: relative;
   z-index: 1;
   color: #df9090;
   text-transform: uppercase;
   font-size: 2em;
-  letter-spacing: 0.2rem; 
+  letter-spacing: 0.2rem;
 }
-
-

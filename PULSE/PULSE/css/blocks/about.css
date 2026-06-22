@@ -1,0 +1,60 @@
+:root {
+  --container-width: 1920px;
+}
+
+.about {
+  background-color: var(--bg-color-2);
+}
+.about__container {
+  padding-top: 160px;
+}
+.about__tabs {
+}
+
+.about__tabs {
+  display: flex;
+  gap: 316px;
+}
+
+.about__tabs-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  max-width: 456px;
+  margin-left: 348px;
+}
+
+.about__tab {
+  display: block;
+}
+
+.about__tab--active {
+}
+.title-md {
+}
+.about__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 468px;
+}
+.about__item {
+}
+.about__item-title {
+  margin-bottom: 10px;
+}
+.about__item-text {
+}
+.about__stats {
+  display: flex;
+}
+.about__stat {
+  
+  
+  flex: 0 1 25%;
+}
+.about__stat-value {
+}
+.about__stat-label {
+}
