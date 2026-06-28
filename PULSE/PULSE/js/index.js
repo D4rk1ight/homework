@@ -3,6 +3,7 @@ import BurgerMenu from "./burger.js";
 import { sizesSlider } from "./product-slider.js";
 import { sizes } from "./sizes.js";
 import Modal from "./modal.js";
+// import { tabs } from "./tabs.js";
 
 try {
   const headerFixed = new HeaderFixed({
@@ -29,14 +30,14 @@ try {
     headerFixed,
   );
 
-  sizesSlider()
+  sizesSlider();
 
   new Modal({
     PAGE_BODY: "page__body",
     PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
   });
 
-  sizes();
+  tabs();
 } catch (error) {
   console.error(error);
 }

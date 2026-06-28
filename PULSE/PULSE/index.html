@@ -17,6 +17,7 @@
 
     <script src="./js/index.js" type="module"></script>
     <script src="./js/fslightbox.js" type="module"></script>
+    <script src="./js/tabs.js" type="module"></script>
     <title>PULSE FITNESS CENTER</title>
   </head>
   <body class="page__body">
@@ -714,57 +715,168 @@
               <button
                 class="about__tab about__tab--active title-md"
                 type="button"
+                data-tab-panel="pulse"
               >
                 PULSE
               </button>
-              <button class="about__tab title-md" type="button">OUR STORY</button>
-              <button class="about__tab title-md" type="button">APPROACH</button>
-              <button class="about__tab title-md" type="button">OUR PLAN</button>
+              <button
+                class="about__tab title-md"
+                type="button"
+                data-tab="story"
+              >
+                OUR STORY
+              </button>
+              <button
+                class="about__tab title-md"
+                type="button"
+                data-tab-panel="approach"
+              >
+                APPROACH
+              </button>
+              <button
+                class="about__tab title-md"
+                type="button"
+                data-tab-panel="plan"
+              >
+                OUR PLAN
+              </button>
             </div>
-  
-            <div class="about__panel">
+
+            <div
+              class="about__panel about__panel--active"
+              id="pusle"
+              data-tab-panel="pulse"
+            >
               <article class="about__item">
-                <h3 class="about__item-title">BEST GYM</h3>
-                <p class="about__item-text">
+                <h3 class="about__item-title text-medium">BEST GYM</h3>
+                <p class="about__item-text text-regular">
                   Ac nec est ultrices varius morbi et non. Donec quam sed eget
-                  purus. Elementum sed malesuada senectus feugiat faucibus morbi a
-                  neque ultricies. Nisl maecenas eget ultricies in lobortis.
+                  purus. Elementum sed malesuada senectus feugiat faucibus morbi
+                  a neque ultricies. Nisl maecenas eget ultricies in lobortis.
                 </p>
               </article>
               <article class="about__item">
-                <h3 class="about__item-title">BEST GYM</h3>
-                <p class="about__item-text">
+                <h3 class="about__item-title text-medium">OUR PLAN</h3>
+                <p class="about__item-text text-regular">
                   Ac nec est ultrices varius morbi et non. Donec quam sed eget
-                  purus. Elementum sed malesuada senectus feugiat faucibus morbi a
-                  neque ultricies. Nisl maecenas eget ultricies in lobortis.
+                  purus. Elementum sed malesuada senectus feugiat.
                 </p>
               </article>
               <article class="about__item">
-                <h3 class="about__item-title">BEST GYM</h3>
-                <p class="about__item-text">
+                <h3 class="about__item-title text-medium">TECHNIQUE</h3>
+                <p class="about__item-text text-regular">
                   Ac nec est ultrices varius morbi et non. Donec quam sed eget
-                  purus. Elementum sed malesuada senectus feugiat faucibus morbi a
-                  neque ultricies. Nisl maecenas eget ultricies in lobortis.
+                  purus. Elementum sed malesuada senectus feugiat. At faucibus
+                  morbi a neque ultricies. Nisl maecenas eget ultricies in
+                  lobortis. Nec quam sed eget purus. Elementum sed malesuada
+                  senectus
+                </p>
+              </article>
+            </div>
+            <div class="about__panel" id="story" data-tab-panel="story" hidden>
+              <article class="about__item">
+                <h3 class="about__item-title text-medium">BEST GYM</h3>
+                <p class="about__item-text text-regular">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus feugiat faucibus morbi
+                  a neque ultricies. Nisl maecenas eget ultricies in lobortis.
+                </p>
+              </article>
+              <article class="about__item">
+                <h3 class="about__item-title text-medium">OUR PLAN</h3>
+                <p class="about__item-text text-regular">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus feugiat.
+                </p>
+              </article>
+              <article class="about__item">
+                <h3 class="about__item-title text-medium">TECHNIQUE</h3>
+                <p class="about__item-text text-regular">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus feugiat. At faucibus
+                  morbi a neque ultricies. Nisl maecenas eget ultricies in
+                  lobortis. Nec quam sed eget purus. Elementum sed malesuada
+                  senectus
+                </p>
+              </article>
+            </div>
+            <div class="about__panel" id="approach" data-tab-panel="approach" hidden>
+              <article class="about__item">
+                <h3 class="about__item-title text-medium">BEST GYM</h3>
+                <p class="about__item-text text-regular">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus feugiat faucibus morbi
+                  a neque ultricies. Nisl maecenas eget ultricies in lobortis.
+                </p>
+              </article>
+              <article class="about__item">
+                <h3 class="about__item-title text-medium">OUR PLAN</h3>
+                <p class="about__item-text text-regular">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus feugiat.
+                </p>
+              </article>
+              <article class="about__item">
+                <h3 class="about__item-title text-medium">TECHNIQUE</h3>
+                <p class="about__item-text text-regular">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus feugiat. At faucibus
+                  morbi a neque ultricies. Nisl maecenas eget ultricies in
+                  lobortis. Nec quam sed eget purus. Elementum sed malesuada
+                  senectus
+                </p>
+              </article>
+            </div>
+            <div class="about__panel" id="plan"  data-tab-panel="plan" hidden>
+              <article class="about__item">
+                <h3 class="about__item-title text-medium">BEST GYM</h3>
+                <p class="about__item-text text-regular">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus feugiat faucibus morbi
+                  a neque ultricies. Nisl maecenas eget ultricies in lobortis.
+                </p>
+              </article>
+              <article class="about__item">
+                <h3 class="about__item-title text-medium">OUR PLAN</h3>
+                <p class="about__item-text text-regular">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus feugiat.
+                </p>
+              </article>
+              <article class="about__item">
+                <h3 class="about__item-title text-medium">TECHNIQUE</h3>
+                <p class="about__item-text text-regular">
+                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                  purus. Elementum sed malesuada senectus feugiat. At faucibus
+                  morbi a neque ultricies. Nisl maecenas eget ultricies in
+                  lobortis. Nec quam sed eget purus. Elementum sed malesuada
+                  senectus
                 </p>
               </article>
             </div>
           </div>
           <ul class="about__stats">
             <li class="about__stat">
-              <span class="about__stat-value"> 6 </span>
-              <span class="about__stat-label"> YEARS OF EXPERIENCES </span>
+              <span class="about__stat-value title-md"> 6 </span>
+              <span class="about__stat-label text-medium">
+                YEARS OF EXPERIENCES
+              </span>
             </li>
             <li class="about__stat">
-              <span class="about__stat-value"> 6 </span>
-              <span class="about__stat-label"> YEARS OF EXPERIENCES </span>
+              <span class="about__stat-value title-md"> 20 </span>
+              <span class="about__stat-label text-medium">
+                SELECTED TRAINER</span
+              >
             </li>
             <li class="about__stat">
-              <span class="about__stat-value"> 6 </span>
-              <span class="about__stat-label"> YEARS OF EXPERIENCES </span>
+              <span class="about__stat-value title-md"> 120K </span>
+              <span class="about__stat-label text-medium">
+                CALORIES BURNED
+              </span>
             </li>
             <li class="about__stat">
-              <span class="about__stat-value"> 6 </span>
-              <span class="about__stat-label"> YEARS OF EXPERIENCES </span>
+              <span class="about__stat-value title-md"> 432 </span>
+              <span class="about__stat-label text-medium"> HAPPY MEMBERS </span>
             </li>
           </ul>
         </div>
