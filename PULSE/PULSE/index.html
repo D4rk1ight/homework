@@ -17,7 +17,6 @@
 
     <script src="./js/index.js" type="module"></script>
     <script src="./js/fslightbox.js" type="module"></script>
-    <script src="./js/tabs.js" type="module"></script>
     <title>PULSE FITNESS CENTER</title>
   </head>
   <body class="page__body">
@@ -710,7 +709,7 @@
 
       <section class="about">
         <div class="about__container container">
-          <div class="about__tabs">
+          <!-- <div class="about__tabs">
             <div class="about__tabs-list">
               <button
                 class="about__tab about__tab--active title-md"
@@ -722,7 +721,7 @@
               <button
                 class="about__tab title-md"
                 type="button"
-                data-tab="story"
+                data-tab-panel="story"
               >
                 OUR STORY
               </button>
@@ -744,7 +743,7 @@
 
             <div
               class="about__panel about__panel--active"
-              id="pusle"
+              id="pulse"
               data-tab-panel="pulse"
             >
               <article class="about__item">
@@ -775,86 +774,80 @@
             </div>
             <div class="about__panel" id="story" data-tab-panel="story" hidden>
               <article class="about__item">
-                <h3 class="about__item-title text-medium">BEST GYM</h3>
+                <h3 class="about__item-title text-medium">HOW WE STARTED</h3>
                 <p class="about__item-text text-regular">
-                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
-                  purus. Elementum sed malesuada senectus feugiat faucibus morbi
-                  a neque ultricies. Nisl maecenas eget ultricies in lobortis.
+                  Pulse began as a small coaching room focused on technique,
+                  honest feedback, and personal progress over quick promises.
                 </p>
               </article>
               <article class="about__item">
-                <h3 class="about__item-title text-medium">OUR PLAN</h3>
+                <h3 class="about__item-title text-medium">OUR COMMUNITY</h3>
                 <p class="about__item-text text-regular">
-                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
-                  purus. Elementum sed malesuada senectus feugiat.
+                  The club grew around members who wanted a focused space,
+                  strong coaching, and a team that remembered their goals.
                 </p>
               </article>
               <article class="about__item">
-                <h3 class="about__item-title text-medium">TECHNIQUE</h3>
+                <h3 class="about__item-title text-medium">WHAT CHANGED</h3>
                 <p class="about__item-text text-regular">
-                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
-                  purus. Elementum sed malesuada senectus feugiat. At faucibus
-                  morbi a neque ultricies. Nisl maecenas eget ultricies in
-                  lobortis. Nec quam sed eget purus. Elementum sed malesuada
-                  senectus
+                  We added more programs, better equipment, and dedicated
+                  training areas while keeping the same personal approach.
                 </p>
               </article>
             </div>
-            <div class="about__panel" id="approach" data-tab-panel="approach" hidden>
+            <div
+              class="about__panel"
+              id="approach"
+              data-tab-panel="approach"
+              hidden
+            >
               <article class="about__item">
-                <h3 class="about__item-title text-medium">BEST GYM</h3>
+                <h3 class="about__item-title text-medium">SMART COACHING</h3>
                 <p class="about__item-text text-regular">
-                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
-                  purus. Elementum sed malesuada senectus feugiat faucibus morbi
-                  a neque ultricies. Nisl maecenas eget ultricies in lobortis.
+                  We match training load to the member, then build intensity
+                  through clear technique, recovery, and steady progression.
                 </p>
               </article>
               <article class="about__item">
-                <h3 class="about__item-title text-medium">OUR PLAN</h3>
+                <h3 class="about__item-title text-medium">FORM FIRST</h3>
                 <p class="about__item-text text-regular">
-                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
-                  purus. Elementum sed malesuada senectus feugiat.
+                  Each movement starts with control. Better form makes every
+                  workout safer, stronger, and easier to repeat consistently.
                 </p>
               </article>
               <article class="about__item">
-                <h3 class="about__item-title text-medium">TECHNIQUE</h3>
+                <h3 class="about__item-title text-medium">CLEAR FEEDBACK</h3>
                 <p class="about__item-text text-regular">
-                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
-                  purus. Elementum sed malesuada senectus feugiat. At faucibus
-                  morbi a neque ultricies. Nisl maecenas eget ultricies in
-                  lobortis. Nec quam sed eget purus. Elementum sed malesuada
-                  senectus
+                  Coaches track effort, adjust sessions, and explain the next
+                  step so members always know why they train a certain way.
                 </p>
               </article>
             </div>
-            <div class="about__panel" id="plan"  data-tab-panel="plan" hidden>
+            <div class="about__panel" id="plan" data-tab-panel="plan" hidden>
               <article class="about__item">
-                <h3 class="about__item-title text-medium">BEST GYM</h3>
+                <h3 class="about__item-title text-medium">START STRONG</h3>
                 <p class="about__item-text text-regular">
-                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
-                  purus. Elementum sed malesuada senectus feugiat faucibus morbi
-                  a neque ultricies. Nisl maecenas eget ultricies in lobortis.
+                  New members begin with a simple assessment, goal setting, and
+                  a training path that fits their current level.
                 </p>
               </article>
               <article class="about__item">
-                <h3 class="about__item-title text-medium">OUR PLAN</h3>
+                <h3 class="about__item-title text-medium">BUILD THE HABIT</h3>
                 <p class="about__item-text text-regular">
-                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
-                  purus. Elementum sed malesuada senectus feugiat.
+                  The first weeks focus on routine, technique, and confidence
+                  before increasing volume or chasing heavier numbers.
                 </p>
               </article>
               <article class="about__item">
-                <h3 class="about__item-title text-medium">TECHNIQUE</h3>
+                <h3 class="about__item-title text-medium">TRACK PROGRESS</h3>
                 <p class="about__item-text text-regular">
-                  Ac nec est ultrices varius morbi et non. Donec quam sed eget
-                  purus. Elementum sed malesuada senectus feugiat. At faucibus
-                  morbi a neque ultricies. Nisl maecenas eget ultricies in
-                  lobortis. Nec quam sed eget purus. Elementum sed malesuada
-                  senectus
+                  We review progress regularly, update the program, and keep the
+                  next target visible so training stays motivating.
                 </p>
               </article>
             </div>
           </div>
+
           <ul class="about__stats">
             <li class="about__stat">
               <span class="about__stat-value title-md"> 6 </span>
@@ -878,7 +871,77 @@
               <span class="about__stat-value title-md"> 432 </span>
               <span class="about__stat-label text-medium"> HAPPY MEMBERS </span>
             </li>
-          </ul>
+          </ul> -->
+
+          <div class="about__tabs">
+            <div class="about__tabs-list">
+              <input type="checkbox" name="about-tabs" id="tab-pusle" />
+              <label for="tab-pusle" class="about__tab about__tab--active">
+                PULSE</label
+              >
+              <input type="checkbox" name="about-tabs" id="tab-outStory" />
+              <label for="tab-outStory" class="about__tab"> OUR STORY</label>
+            </div>
+
+            <div class="about__panel">
+              <div class="about__panel about__panel--active" id="content-pulse">
+                <article class="about__item">
+                  <h3 class="about__item-title text-medium">BEST GYM</h3>
+                  <p class="about__item-text text-regular">
+                    Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                    purus. Elementum sed malesuada senectus feugiat faucibus
+                    morbi a neque ultricies. Nisl maecenas eget ultricies in
+                    lobortis.
+                  </p>
+                </article>
+                <article class="about__item">
+                  <h3 class="about__item-title text-medium">OUR PLAN</h3>
+                  <p class="about__item-text text-regular">
+                    Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                    purus. Elementum sed malesuada senectus feugiat.
+                  </p>
+                </article>
+                <article class="about__item">
+                  <h3 class="about__item-title text-medium">TECHNIQUE</h3>
+                  <p class="about__item-text text-regular">
+                    Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                    purus. Elementum sed malesuada senectus feugiat. At faucibus
+                    morbi a neque ultricies. Nisl maecenas eget ultricies in
+                    lobortis. Nec quam sed eget purus. Elementum sed malesuada
+                    senectus
+                  </p>
+                </article>
+              </div>
+              <div class="about__panel" id="content-outStory">
+                <article class="about__item">
+                  <h3 class="about__item-title text-medium">BEST GYM</h3>
+                  <p class="about__item-text text-regular">
+                    Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                    purus. Elementum sed malesuada senectus feugiat faucibus
+                    morbi a neque ultricies. Nisl maecenas eget ultricies in
+                    lobortis.
+                  </p>
+                </article>
+                <article class="about__item">
+                  <h3 class="about__item-title text-medium">OUR PLAN</h3>
+                  <p class="about__item-text text-regular">
+                    Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                    purus. Elementum sed malesuada senectus feugiat.
+                  </p>
+                </article>
+                <article class="about__item">
+                  <h3 class="about__item-title text-medium">TECHNIQUE</h3>
+                  <p class="about__item-text text-regular">
+                    Ac nec est ultrices varius morbi et non. Donec quam sed eget
+                    purus. Elementum sed malesuada senectus feugiat. At faucibus
+                    morbi a neque ultricies. Nisl maecenas eget ultricies in
+                    lobortis. Nec quam sed eget purus. Elementum sed malesuada
+                    senectus
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

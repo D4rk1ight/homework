@@ -1,0 +1,139 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@import "reset.css";
+@import "fonts.css";
+@import "global.css";
+@import "header-footer.css";
+@import "footer.css";
+
+.main__header,
+.main__benefits {
+  padding-bottom: 80px;
+}
+
+.main-article .main__hero {
+  padding-bottom: 0;
+}
+
+.main__review {
+  padding-bottom: 120px;
+}
+
+.article__mb {
+  margin-bottom: 80px;
+}
+
+/* =================================================== */
+
+.title--large {
+  font-size: 48px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  top: 453px;
+  width: 50%;
+}
+
+.hero h1 {
+  max-width: 596px;
+}
+
+.hero__text {
+  padding-bottom: 20px;
+}
+
+.hero__text:last-of-type {
+  padding-bottom: 0px;
+}
+
+.hero__img img {
+  width: 100%;
+  margin: 80px 0;
+}
+
+/* ===================================== */
+
+.benefits__text {
+  padding-bottom: 20px;
+}
+
+.benefits__item {
+  padding-left: 15px;
+}
+
+li {
+  position: relative;
+}
+
+.benefits__item::before {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #3596ed;
+}
+
+/* =========================== */
+
+.review {
+  position: relative;
+}
+
+.review::before {
+  top: 409px;
+  right: 10px;
+  width: calc(50% - 20px);
+}
+
+.body--review {
+  padding-bottom: 120px;
+}
+
+.review__video video {
+  width: 100%;
+}
+
+.review__video {
+  position: relative;
+}
+
+.play__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.review__text {
+  padding-top: 40px;
+}
+
+/* ============================================== */

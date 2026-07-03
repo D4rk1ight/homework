@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>FIT STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="GYM, Cпорт зал, FIT STUDIO, лучший зал, качалка"
+    />
+    <meta
+      name="description"
+      content="Открытие нового филиала в центре города! от FIT STUDIO"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./img/icons/favicon.ico"
+    />
+    <link href="./css/article.css" rel="stylesheet" type="text/css" />
+    <link href="./css/media.css" rel="stylesheet" />
+    <script>
+      function mouseColor() {
+        let e = window.event;
+
+        let posY = e.clientY;
+        let posX = e.clientX;
+      }
+    </script>
+  </head>
+  <body onload="mouseColor()">
+    <header class="main__header header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="/index.html">
+            <p class="logo__text">Fit</p>
+            <div class="logo__img">
+              <img src="./img/icons/logo.png" alt="" />
+            </div>
+            <p class="logo__text">studio</p>
+          </a>
+
+          <div class="header__info">
+            <p class="header__text">Первое посещение бесплатно</p>
+            <a class="header__tel" href="tel:+7(928)282-28-82"
+              >+7 (928) 282-28-82</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-article">
+      <section class="main__hero hero decor">
+        <div class="container">
+          <h1 class="title title--large">
+            Открытие нового филиала в центре города!
+          </h1>
+
+          <p class="hero__text">
+            Фитнес клуб «Fit.Studio» рад сообщить об открытии нового филиала
+            в центре города. Новый клуб расположен в удобном месте, рядом
+            с остановками общественного транспорта, что делает его доступным
+            для всех жителей города. Новое просторное помещение оборудовано
+            современными тренажёрами, зонами для групповых занятий и отдыха,
+            а также сауной и бассейном.
+          </p>
+
+          <p class="hero__text">
+            Кроме того, в "FitLife" работают опытные тренеры, которые помогут
+            составить индивидуальную программу тренировок и диеты для достижения
+            желаемых результатов. Клиенты могут также воспользоваться услугами
+            персональных тренировок и консультаций по здоровому образу жизни.
+          </p>
+
+          <div class="hero__img">
+            <img src="./img/content/gym-img.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="main__benefits benefits">
+        <div class="container">
+          <h2 class="title">Групповые занятия</h2>
+          <p class="benefits__text">
+            В новом филиале «Fit.Studio» будут проводиться различные групповые
+            занятия. Каждый клиент сможет подобрать подходящий ему вид занятий
+            и найти комфортную среду для тренировок.
+          </p>
+
+          <ul class="benefits__list">
+            <li class="benefits__item">Йога</li>
+            <li class="benefits__item">Пилатес</li>
+            <li class="benefits__item">Аэробика</li>
+            <li class="benefits__item">Танцы</li>
+            <li class="benefits__item">Силовые тренировки</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="main__review review decor">
+        <div class="container">
+          <h2 class="title">Обзор нового филиала</h2>
+
+          <div class="review__video">
+            <video
+              src="./videos/gym-video.mp4"
+              muted
+              width="1280"
+              height="720"
+              preload="auto"
+              poster="/img/content/gym-poster.jpg"
+              class="video"
+            ></video>
+
+            <button type="button" class="play__button">
+              <img src="./img/icons/play-icon.svg" class="play-icon" alt="" />
+            </button>
+          </div>
+
+          <p class="review__text">
+            Приглашаем всех желающих посетить новый филиал фитнес клуба
+            "FitLife" и начать заботиться о своем здоровье и фитнесе прямо
+            сейчас!
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="logo footer--logo">
+          <p class="logo__text">Fit</p>
+          <div class="logo__img">
+            <img src="./img/icons/logo.png" alt="" />
+          </div>
+          <p class="logo__text">studio</p>
+        </div>
+        <ul class="nav footer--nav">
+          <li class="nav__item">
+            <a href="#">Клубы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Тренировки</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Абонементы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Программа лояльности</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="footer__copy footer--copy">
+          <img src="./img/icons/copyright.png" alt="" />
+          Copyright. Все права защищены
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

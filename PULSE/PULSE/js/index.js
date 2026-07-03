@@ -3,15 +3,28 @@ import BurgerMenu from "./burger.js";
 import { sizesSlider } from "./product-slider.js";
 import { sizes } from "./sizes.js";
 import Modal from "./modal.js";
-// import { tabs } from "./tabs.js";
+import { tabs } from "./tabs.js";
 
-try {
-  const headerFixed = new HeaderFixed({
-    HEADER: "header",
-    HEADER_FIXED: "header--fixed",
-  });
+const initModule = (name, callback) => {
+  try {
+    return callback();
+  } catch (error) {
+    console.error(`${name}:`, error);
+    return null;
+  }
+};
 
-  new BurgerMenu(
+const headerFixed = initModule(
+  "HeaderFixed",
+  () =>
+    new HeaderFixed({
+      HEADER: "header",
+      HEADER_FIXED: "header--fixed",
+    }),
+);
+
+initModule("BurgerMenu", () => {
+  return new BurgerMenu(
     {
       BURGER: "burger",
       BURGER_OPEN: "burger--open",
@@ -29,15 +42,15 @@ try {
     },
     headerFixed,
   );
+});
 
-  sizesSlider();
+initModule("Product slider", sizesSlider);
 
-  new Modal({
+initModule("Tabs", tabs);
+
+initModule("Modal", () => {
+  return new Modal({
     PAGE_BODY: "page__body",
     PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
   });
-
-  tabs();
-} catch (error) {
-  console.error(error);
-}
+});

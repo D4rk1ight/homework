@@ -1,0 +1,256 @@
+@import "article.css";
+@import "header-footer.css";
+
+.hero {
+  position: relative;
+}
+
+.hero::before {
+  top: 359px;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: minmax(208px, 1fr) minmax(320px, 1.4fr);
+  gap: 28px;
+  position: relative;
+  align-items: center;
+}
+
+.hero__title {
+  font-size: 62px;
+}
+.hero__title strong {
+  display: block;
+  color: var(--accent-color);
+}
+
+.hero__info p {
+  margin-bottom: 140px;
+}
+
+.hero__decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero__button {
+  display: block;
+  padding: 19px 32px;
+  background-color: var(--accent-color);
+  max-width: 270px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.hero__coach {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  position: relative;
+}
+
+.hero__coach::before {
+  display: block;
+  content: "Выбери своего тренера";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+  display: block;
+  border: 1px solid;
+  text-align: center;
+  padding: 20.8px;
+  max-width: 160px;
+  max-height: 86px;
+  background-color: #ffffffe6;
+  color: var(--text-zagolovochnyy);
+}
+
+.hero__coach-img {
+  overflow: hidden;
+  transition: var(--transition);
+  -webkit-user-drag: none;
+}
+.hero__coach-img:hover:first-child {
+  box-shadow: -6px 0 8px 12px #ff73e3da;
+}
+.hero__coach-img:hover {
+  box-shadow: 6px 0 8px 12px #2a5fdbd4;
+}
+
+.hero__coach-img {
+}
+
+.hero__coach-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero__choose {
+  position: absolute;
+  right: 270px;
+  top: 40px;
+  display: block;
+  border: var(--site-border);
+  text-align: center;
+  padding: clamp(1rem, 0.886rem + 0.57vw, 1.313rem);
+  width: 160px;
+  height: 86px;
+  background-color: #ffffffe6;
+}
+
+/* ============================================= */
+
+.item__info {
+  padding: 20px;
+}
+
+.item__date {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+.item__text {
+  color: var(--text-zagolovochnyy);
+  margin-bottom: 12px;
+}
+.item__link {
+  color: var(--accent-color);
+  font-weight: 400;
+}
+
+.item__link img {
+  transition: var(--transition);
+}
+
+.item__link:hover img {
+  transform: translateX(10px);
+}
+
+@keyframes item-arrow {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
+
+/* .news__feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  gap: 28px;
+} */
+
+.news__feed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  gap: 28px;
+}
+
+.item {
+  border: var(--site-border);
+}
+
+.item__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* ============================================ */
+
+.faq {
+  position: relative;
+}
+
+
+.faq::before {
+  top: 215px;
+  /* left: -19.8%; */
+  left: -2.8%;
+  width: calc(50% - 80px);
+}
+
+.title {
+}
+.title--large {
+}
+.faq__inner {
+  display: grid;
+  grid-template-columns: minmax(280px, 492px) 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.faq__img {
+  overflow: hidden;
+}
+
+.faq__img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.accordion {
+  display: grid;
+  grid-template-rows: auto-fill;
+  row-gap: 20px;
+  max-height: 100%;
+}
+.accordion__item {
+  /* padding: clamp(12px, 2vw, 20px); */
+  margin-bottom: 20px;
+}
+
+.accordion__item:last-of-type {
+  margin-bottom: 0;
+}
+
+/* .accordion__item[open] {
+  background: antiquewhite;
+} */
+
+.accordion__item:has(details[open]) {
+  background: gold;
+}
+
+.accordion__item[open] .accordion__icon {
+  transform: rotate(180deg);
+}
+
+.accordion__question {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  max-height: 100%;
+
+  /* padding: clamp(12px, 2vw, 20px); */
+  padding: 20px;
+}
+
+.accordion__icon {
+  transition: var(--transition);
+}
+
+.accordion__answer {
+  padding: 0 20px 20px 20px;
+}
+
+.accordion__item--border {
+  border: var(--site-border);
+  border-right: none;
+  border-left: none;
+}
+
+/* ========================================== */

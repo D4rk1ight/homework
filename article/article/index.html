@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIT STUDIO BLOG</title>
+    <link href="./css/index.css" rel="stylesheet" />
+    <link href="./css/media.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="logo">
+            <p class="logo__text">Fit</p>
+            <div class="logo__img">
+              <img src="./img/icons/logo.png" alt="" />
+            </div>
+            <p class="logo__text">studio</p>
+          </div>
+
+          <div class="header__info">
+            <p class="header__text">Первое посещение бесплатно</p>
+            <a class="header__tel" href="tel:+7(928)282-28-82"
+              >+7 (928) 282-28-82</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="main__hero hero decor">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__info">
+              <h2 class="title hero__title">
+                Подтянутое тело
+                <strong>за месяц</strong>
+                тренировок
+              </h2>
+              <p>
+                Программа тренировки включает в себя разнообразные упражнения,
+                направленные на развитие силы и мышечного тонуса.
+              </p>
+              <a class="hero__button" href="#"> Посмотреть программу </a>
+            </div>
+
+            <div class="hero__coach">
+              <div class="hero__coach-img">
+                <img
+                  src="./img/content/coach-left.jpg"
+                  alt="Женщина-тренер специально для тебя!"
+                />
+              </div>
+
+              <div class="hero__coach-img">
+                <img
+                  src="./img/content/coach-right.jpg"
+                  alt="Наш лучший мужчина-тренер ждет тебя!"
+                />
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="main__news news">
+        <div class="container">
+          <h2 class="news__title title">Последние Новости</h2>
+          <div class="news__feed">
+            <div class="item">
+              <div class="item__img">
+                <img
+                  src="./img/content/gym-news-1.jpg"
+                  srcset="
+                    ./img/content/gym-news-1.jpg      284w,
+                    ./img/content/gym-news-1-400w.jpg 400w
+                  "
+                  sizes="(max-width: 768px) 400px, 284px"
+                  alt="Открытие нового филиала в центре города!"
+                />
+              </div>
+              <div class="item__info">
+                <time class="item__date">19.04.2024</time>
+                <p class="item__text">
+                  Открытие нового филиала в центре города!
+                </p>
+                <a href="./article.html" class="item__link">
+                  Подробнее
+                  <img src="./img/icons/arrow.svg" alt="" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__img">
+                <img
+                  src="./img/content/gym-news-2.jpg"
+                  alt="Запуск новой программы тренировок для начинающих"
+                />
+              </div>
+              <div class="item__info">
+                <time class="item__date">17.04.2024</time>
+                <p class="item__text">
+                  Запуск новой программы тренировок для начинающих
+                </p>
+                <a href="./article.html" class="item__link">
+                  Подробнее
+                  <img src="./img/icons/arrow.svg" alt="" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__img">
+                <img
+                  src="./img/content/gym-news-3.jpg"
+                  alt="Специальное предложение для студентов и школьников"
+                />
+              </div>
+              <div class="item__info">
+                <time class="item__date">13.04.2024</time>
+                <p class="item__text">
+                  Специальное предложение для студентов и школьников
+                </p>
+                <a href="./article.html" class="item__link">
+                  Подробнее
+                  <img src="./img/icons/arrow.svg" alt="" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="item__img">
+                <img
+                  src="./img/content/gym-news-4.jpg"
+                  alt="Открыт конкурс на лучший фитнес-челлендж"
+                />
+              </div>
+              <div class="item__info">
+                <time class="item__date">08.04.2024</time>
+                <p class="item__text">
+                  Открыт конкурс на лучший фитнес-челлендж
+                </p>
+                <a href="./article.html" class="item__link">
+                  Подробнее
+                  <img src="./img/icons/arrow.svg" alt="" aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="main__faq faq decor">
+        <div class="container">
+          <h2 class="title">Вопросы и ответы</h2>
+          <div class="faq__inner">
+            <div class="faq__img">
+              <img
+                src="./img/content/faq-492w.jpg"
+                alt="Женщина с гантелями"
+                srcset="
+                  ./img/content/faq-300w.jpg 300w,
+                  ./img/content/faq-492w.jpg 492w
+                "
+                sizes="(max-width: 1000px) 300px, 492px"
+              />
+            </div>
+            <div class="accordion">
+              <ul class="accordion__list">
+                <details
+                  class="accordion__item accordion__item--border"
+                  open
+                  name="faq"
+                >
+                  <summary class="accordion__question title--medium">
+                    Какие способы оплаты вы принимаете?
+                    <img
+                      class="accordion__icon"
+                      src="./img/icons/arrow--up-down.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </summary>
+                  <p class="accordion__answer">
+                    Наш сайт подключен к интернет-эквайрингу, и вы можете
+                    оплатить товар или услугу банковской картой Visa,
+                    MasterCard, Maestro и МИР. Также в наших клубах возможна
+                    наличная оплата при посещении фитнес-центра.
+                  </p>
+                </details>
+                <details
+                  class="accordion__item accordion__item--border"
+                  name="faq"
+                >
+                  <summary class="accordion__question title--medium">
+                    Какие абонементы у вас есть?
+                    <img
+                      class="accordion__icon"
+                      src="./img/icons/arrow--up-down.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </summary>
+                  <p class="accordion__answer">
+                    Наш сайт подключен к интернет-эквайрингу, и вы можете
+                    оплатить товар или услугу банковской картой Visa,
+                    MasterCard, Maestro и МИР. Также в наших клубах возможна
+                    наличная оплата при посещении фитнес-центра.
+                  </p>
+                </details>
+                <details
+                  class="accordion__item accordion__item--border"
+                  name="faq"
+                >
+                  <summary class="accordion__question title--medium">
+                    Есть ли у вас рассрочка на абонементы?
+                    <img
+                      class="accordion__icon"
+                      src="./img/icons/arrow--up-down.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </summary>
+                  <p class="accordion__answer">
+                    Наш сайт подключен к интернет-эквайрингу, и вы можете
+                    оплатить товар или услугу банковской картой Visa,
+                    MasterCard, Maestro и МИР. Также в наших клубах возможна
+                    наличная оплата при посещении фитнес-центра.
+                  </p>
+                </details>
+                <details
+                  class="accordion__item accordion__item--border"
+                  name="faq"
+                >
+                  <summary class="accordion__question title--medium">
+                    Есть ли у вас бонусы для постоянных клиентов?
+                    <img
+                      class="accordion__icon"
+                      src="./img/icons/arrow--up-down.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </summary>
+                  <p class="accordion__answer">
+                    Наш сайт подключен к интернет-эквайрингу, и вы можете
+                    оплатить товар или услугу банковской картой Visa,
+                    MasterCard, Maestro и МИР. Также в наших клубах возможна
+                    наличная оплата при посещении фитнес-центра.
+                  </p>
+                </details>
+                <details
+                  class="accordion__item accordion__item--border"
+                  name="faq"
+                >
+                  <summary class="accordion__question title--medium">
+                    Возможно ли переоформить мою клубную карту на другого
+                    человека?
+                    <img
+                      class="accordion__icon"
+                      src="./img/icons/arrow--up-down.svg"
+                      alt=""
+                      aria-hidden="true"
+                    />
+                  </summary>
+                  <p class="accordion__answer">
+                    Наш сайт подключен к интернет-эквайрингу, и вы можете
+                    оплатить товар или услугу банковской картой Visa,
+                    MasterCard, Maestro и МИР. Также в наших клубах возможна
+                    наличная оплата при посещении фитнес-центра.
+                  </p>
+                </details>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="logo footer--logo">
+          <p class="logo__text">Fit</p>
+          <div class="logo__img">
+            <img src="./img/icons/logo.png" alt="" />
+          </div>
+          <p class="logo__text">studio</p>
+        </div>
+        <ul class="nav footer--nav">
+          <li class="nav__item">
+            <a href="#">Клубы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Тренировки</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Абонементы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Программа лояльности</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="footer__copy footer--copy">
+          &#169; Copyright. Все права защищены
+        </div>
+      </div>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

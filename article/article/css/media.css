@@ -1,0 +1,146 @@
+@media (width <= 1024px) {
+  .hero::before {
+    display: none;
+  }
+}
+
+@media (width <= 922px) {
+  .container {
+    max-width: 786px;
+  }
+
+  .main-article .hero::before {
+    display: none;
+  }
+
+  .review::before {
+    display: none;
+  }
+
+  /* =========================== */
+  .header {
+    padding-bottom: 40px;
+  }
+
+  .main__hero,
+  .main__news,
+  .main__faq {
+    padding-bottom: 80px;
+  }
+
+  .title {
+    margin-bottom: 40px;
+  }
+  /* ====================== */
+  .hero__inner {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+
+  .hero__inner::before {
+    display: none;
+  }
+
+  .hero__title {
+    font-size: 55px;
+  }
+
+  .hero__button {
+    display: block;
+    max-width: none;
+    text-align: center;
+  }
+
+  .hero__title {
+    text-align: center;
+  }
+
+  .hero__info p {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .hero__coach-img {
+    width: 100%;
+  }
+  /* ===================================== */
+  .faq::before {
+    display: none;
+  }
+
+  .faq__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq__img {
+    order: 2;
+  }
+  /* ===================================== */
+
+
+
+  .play__button {
+    width: 50px;
+    height: 50px;
+  }
+
+
+}
+
+@media (width <= 768px) {
+  .container {
+    max-width: 606px;
+  }
+
+  .title {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .title--medium {
+    font-size: 20px;
+  }
+  /* ======================= */
+}
+
+@media (width <= 576px) {
+
+  .main__benefits {
+    padding-bottom: 60px;
+  }
+
+  .main__review {
+    padding-bottom: 80px;
+  }
+
+
+  .title{
+    font-size: 30px;
+  }
+
+
+  .hero__coach::before {
+    top: 20px;
+    font-size: 14px;
+    padding: 10px;
+    max-width: 122px;
+  }
+  /* =========================== */
+  .title--medium {
+    font-size: 18px;
+  }
+
+  .hero__img img {
+    margin: 40px 0;
+  }
+}
+
+@media (width <= 400px) {
+  .hero__coach::before {
+    font-size: 13px;
+    padding: 8.6px;
+    max-width: 118px;
+  }
+  /* ================= */
+}

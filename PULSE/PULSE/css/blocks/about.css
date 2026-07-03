@@ -28,6 +28,19 @@
   margin-left: 348px;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+#tab-pulse:checked ~ .content-pulse,
+#tab-outStory:checked ~ .content-outStory {
+  display: block;
+}
+
+.about__panel {
+  display: none;
+}
+
 .about__tab {
   display: block;
   opacity: 0.3;
@@ -51,7 +64,6 @@
   border-radius: 100px;
 }
 
-
 .about__panel {
   margin-top: 25px;
   display: flex;
@@ -61,13 +73,9 @@
   /* display: none; */
 }
 
-
 .about__panel[hidden] {
   display: none;
 }
-
-
-
 
 .about__item {
 }
