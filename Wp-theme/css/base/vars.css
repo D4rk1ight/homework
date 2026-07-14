@@ -1,0 +1,13 @@
+:root {
+  /* fonts */
+  --font-family: "Cormorant Garamond", serif;
+  --second-family: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+
+  /* colors */
+  --accent-color: #0d3b3f;
+  --bg-color: #ddd;
+  --bg-cream: #faf8f5;
+
+  /* container */
+  --container-width: 1280px;
+}

@@ -24,7 +24,9 @@
 
 @media (width <=1024px) {
   .header__menu {
+    isolation: isolate;
     position: fixed;
+    z-index: var(--layer-2);
     right: 0;
     top: 0;
     min-width: 297px;
@@ -72,6 +74,3 @@
     color: var(--accent-color);
   }
 }
-
-
-

@@ -5,6 +5,14 @@ import { sizes } from "./sizes.js";
 import Modal from "./modal.js";
 import { tabs } from "./tabs.js";
 
+document.addEventListener("click", event => {
+  const link = event.target.closest("a");
+
+  if (!link) return;
+
+  event.preventDefault();
+});
+
 const initModule = (name, callback) => {
   try {
     return callback();
