@@ -1,9 +1,9 @@
 .page {
   font-family: var(--font-family);
-  line-height: 1;
+  line-height: 1.7;
   font-weight: 400;
-  font-size: 16px;
-  background-color: var(--bg-cream);
+  font-size: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.105), 1.0625rem);
+  background-color: var(--cream-color);
 }
 
 .container {

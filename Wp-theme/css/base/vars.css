@@ -5,8 +5,10 @@
 
   /* colors */
   --accent-color: #0d3b3f;
+  --secondary-color: #1a6b72;
+  --text-color: #1f5c63;
   --bg-color: #ddd;
-  --bg-cream: #faf8f5;
+  --cream-color: #faf8f5;
 
   /* container */
   --container-width: 1280px;
