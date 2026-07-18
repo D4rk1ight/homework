@@ -1,13 +1,25 @@
+@import "./base/reset.css";
+@import "./base/fonts.css";
+@import "./base/vars.css";
+@import "../index.css";
+
+
+
 .page {
   font-family: var(--font-family);
   line-height: 1.7;
   font-weight: 400;
   font-size: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.105), 1.0625rem);
-  background-color: white;
+  background-color: var(--cream-color);
 }
 
 .container {
   width: min(calc(var(--container-width) + var(--container-padding) * 2), 100%);
   margin-inline: auto;
   padding-inline: var(--container-padding);
+}
+
+
+.main {
+  margin-top: 1.5rem;
 }

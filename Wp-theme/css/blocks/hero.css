@@ -1,0 +1,51 @@
+.hero {
+}
+.hero__container {
+  padding-block: var(--section-gap);
+}
+.container {
+}
+.hero__benefits {
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  font-family: var(--second-family);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+}
+.hero__title {
+  margin-top: 24px;
+  margin-right: auto;
+
+  line-height: 1;
+  font-weight: 300;
+  color: var(--accent-color);
+  letter-spacing: -0.03em;
+  font-size: clamp(3.5rem, 3.5rem + ((1vw - 0.2rem) * 6.667), 7.5rem);
+}
+.hero__title--accent {
+  color: var(--secondary-color);
+  font-style: italic;
+}
+.hero__text {
+  max-width: 780px;
+  margin-top: 24px;
+  margin-right: auto;
+  color: var(--text-color);
+  font-family: var(--second-family);
+}
+.hero__button {
+  margin-top: 24px;
+  display: flex;
+  justify-content: start;
+}
+.hero__link {
+  text-transform: uppercase;
+  font-family: var(--second-family);
+  color: var(--cream-color);
+  background-color: var(--accent-color);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding: 12px 32px;
+  font-size: var(--font-size-xs);
+}
