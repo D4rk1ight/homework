@@ -1,9 +1,6 @@
 @import "./base/reset.css";
 @import "./base/fonts.css";
 @import "./base/vars.css";
-@import "../index.css";
-
-
 
 .page {
   font-family: var(--font-family);
@@ -19,7 +16,11 @@
   padding-inline: var(--container-padding);
 }
 
-
 .main {
   margin-top: 1.5rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 4px;
 }

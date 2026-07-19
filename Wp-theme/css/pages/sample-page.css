@@ -26,9 +26,17 @@
   padding-left: 17px;
 }
 .page-hero__link {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }
 
+@media (any-hover: hover) {
+  .page-hero__link:hover {
+    color: var(--secondary-color);
+    text-decoration-color: var(--secondary-color);
+  }
+}
 
 .footer.sample--page {
   margin-top: 1.5rem;
-} 
+}

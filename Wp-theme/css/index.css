@@ -8,9 +8,9 @@
 /* blocks */
 
 @import "./blocks/header.css";
-@import "./blocks/footer.css";
-@import "./blocks/services.css";
 @import "./blocks/hero.css";
+@import "./blocks/services.css";
+@import "./blocks/footer.css";
 
 
 
