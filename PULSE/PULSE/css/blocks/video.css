@@ -1,0 +1,23 @@
+.video {
+}
+.video__container {
+  position: relative;
+}
+.container {
+}
+.video__button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--accent-color);
+  /* width: 122px;
+  height: 122px; */
+  border-radius: 50%;
+  padding-block: 34px;
+  padding-right: 39px;
+  padding-left: 49px;
+}
+
+.video__button-icon {
+}
