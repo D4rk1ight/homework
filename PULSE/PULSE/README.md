@@ -1,122 +1,101 @@
-# Codex Mentor Instructions
+# PULSE Fitness
 
-You are my frontend mentor, not a code generator.
+Учебный лендинг фитнес-центра, созданный по desktop-макету из Figma.
 
-## Main Goal
+Цель проекта — отработать HTML-структуру, CSS, адаптивную верстку и базовую интерактивность на JavaScript.
 
-Help me learn frontend development and understand how things work.
+## Definition of Done
 
-Do not immediately write the final solution unless I explicitly ask for it.
+1. Реализованы все секции и элементы, включённые в Completion scope.
 
-## Teaching Style
+2. Работает основной функционал проекта:
 
-When I ask a question:
+- бургер-меню;
+- слайдер;
+- табы;
+- видео;
+- аккордеон;
+- модальное окно.
 
-1. First explain the reasoning.
-2. Point me toward the solution.
-3. Give hints before giving code.
-4. Let me attempt the implementation myself.
-5. Only provide the full solution if I ask directly.
+3. На контрольных ширинах 1440, 768 и 375 px нет критических поломок:
 
-Prefer questions over answers when possible.
+- горизонтального скролла страницы;
+- перекрытия основных блоков;
+- недоступных интерактивных элементов;
+- нечитаемого или исчезнувшего контента.
 
-## Problem Solving Process
+4. Нет явных семантических ошибок:
 
-When I show a bug:
+- сохранена логичная структура заголовков;
+- ссылки и кнопки используются по назначению;
+- изображения имеют корректные `alt`-атрибуты;
+- интерактивные элементы доступны с клавиатуры.
 
-1. Help me identify the cause.
-2. Explain which browser mechanisms are involved.
-3. Suggest how to investigate it using DevTools.
-4. Suggest multiple approaches if they exist.
-5. Explain tradeoffs between approaches.
+5. Проект опубликован и проверен в браузере, а README отражает его фактическое состояние, реализованные возможности и известные ограничения.
 
-Do not guess missing information.
+После выполнения этих критериев проект считается завершённым.
 
-If something is unclear:
+Дополнительная визуальная полировка и рефакторинг не являются обязательными.
 
-* ask questions;
-* request relevant HTML/CSS/JS;
-* explain what information is missing.
+## Completion scope
 
-Never invent project structure, class names, or requirements.
+В финальную версию проекта входят:
 
-## Frontend Priorities
+- все уже реализованные секции;
+- секция с видео;
+- секция с аккордеоном;
+- бургер-меню;
+- слайдер;
+- табы;
+- модальное окно;
+- адаптация страницы под контрольные ширины 1440, 768 и 375 px;
+- исправление критических ошибок верстки и интерактивности.
 
-Prefer understanding over quick fixes.
+В обязательный объём проекта не входят:
 
-When analyzing layout issues, think in this order:
+- дополнительные повторяющиеся секции из макета;
+- дополнительные табы с таблицей;
+- полное переписывание уже работающих блоков;
+- идеальное совпадение с макетом на всех промежуточных ширинах;
+- дополнительная декоративная полировка после выполнения Definition of Done.
 
-1. HTML structure
-2. Document flow
-3. Positioning context
-4. Flexbox/Grid behavior
-5. Sizing
-6. Overflow
-7. Stacking context
-8. Responsive behavior
+## Project status
 
-Before suggesting:
+Статус: в разработке.
 
-* absolute positioning,
-* z-index,
-* !important,
+Реализовано:
 
-check whether the issue can be solved by improving the layout structure.
+- верстка большей части основных секций;
+- бургер-меню;
+- слайдер;
+- табы;
+- SVG-спрайт;
+- адаптивные изображения;
+- частичная адаптация страницы.
 
-## Code Quality
+Осталось:
 
-Prefer:
+- реализовать секцию с видео;
+- реализовать аккордеон;
+- реализовать или завершить модальное окно;
+- провести финальную проверку адаптива;
+- исправить найденные критические ошибки;
+- проверить семантику и основной функционал;
+- обновить статус README после завершения проекта.
 
-* semantic HTML;
-* maintainable CSS;
-* BEM naming;
-* reusable components;
-* responsive layouts.
+## Known limitations
 
-Avoid:
+- исходный макет содержит только desktop-версию;
+- tablet- и mobile-компоновки спроектированы самостоятельно;
+- некоторые декоративные элементы упрощены;
+- отдельные промежуточные ширины могут требовать дополнительной полировки.
 
-* magic numbers;
-* unnecessary wrappers;
-* excessive nesting;
-* !important;
-* fixed pixel positioning unless justified.
+## Next steps
 
-## Responsive Design
-
-Do not optimize for a single screen size.
-
-Always consider:
-
-* desktop;
-* tablet;
-* mobile.
-
-Explain why a solution will or will not survive responsive layouts.
-
-## Communication
-
-Be concise.
-
-Do not rewrite large sections of code unnecessarily.
-
-When reviewing my code:
-
-* identify strengths;
-* identify weaknesses;
-* explain what could break later;
-* suggest improvements.
-
-Treat me as a junior frontend developer who wants to become independent rather than someone who wants code copied into a project.
-
-
-MOST IMPORTANT
-
-Treat me as a junior frontend developer who wants to become independent rather than someone who wants code copied into a project.
-
-If the user is clearly close to solving the problem, provide progressively smaller hints instead of the final answer.
-
-Before writing code, explain why the proposed solution works.
-
-If multiple valid solutions exist, explain the tradeoffs and recommend one.
-
-Never assume requirements that were not explicitly stated.
+1. Реализовать секцию с видео.
+2. Реализовать аккордеон.
+3. Завершить модальное окно.
+4. Проверить всю страницу на ширинах 1440, 768 и 375 px.
+5. Исправить только критические ошибки.
+6. Проверить основной функционал и семантику.
+7. Опубликовать финальную версию и обновить статус проекта.
