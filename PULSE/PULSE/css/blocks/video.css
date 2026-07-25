@@ -6,18 +6,30 @@
 .container {
 }
 .video__button {
+  display: grid;
+  place-items: center;
+  /* justify-content: center;
+  align-items: center; */
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--accent-color);
-  /* width: 122px;
-  height: 122px; */
+  width: clamp(4rem, 2.352rem + 7.03vw, 7.625rem);
+  aspect-ratio: 1;
+  /* height: clamp(4rem, 2.352rem + 7.03vw, 7.625rem); */
   border-radius: 50%;
-  padding-block: 34px;
+  /* padding-block: 34px;
   padding-right: 39px;
-  padding-left: 49px;
+  padding-left: 49px; */
 }
 
 .video__button-icon {
+  /* margin-right: clamp(-0.5rem, -0.273rem + -0.97vw, -1rem); */
+  /* height: clamp(2rem, 1.375rem + 2.67vw, 3.375rem); */
+  /* margin-right: -1em; */
+  width: clamp(1.375rem, 1.034rem + 1.45vw, 2.125rem);
+  /* height: auto; */
+  /* aspect-ratio: 1 / 1 ; */
+  transform: translateX(17%);
 }
