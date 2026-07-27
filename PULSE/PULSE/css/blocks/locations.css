@@ -70,8 +70,7 @@
   opacity: 0;
 }
 
-
-.accordion__item[open] .locations__name::before {
+.accordion__item.is--open .locations__name::before {
   opacity: 1;
 }
 
@@ -79,10 +78,25 @@
   transition: transform var(--transition-time);
 }
 
-.accordion__item[open] .accordion__icon {
+.accordion__item.is--open .accordion__icon {
   transform: rotateZ(90deg);
 }
 
 .accordion__content {
-  padding: 32px;
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    var(--transition-time) grid-template-rows,
+    var(--transition-time) opacity;
+}
+
+.accordion__content-inner {
+  overflow: hidden;
+}
+
+
+.accordion__item.is--open .accordion__content {
+  grid-template-rows: 1fr;
+  opacity: 1;
 }
