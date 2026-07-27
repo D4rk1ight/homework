@@ -50,7 +50,6 @@ cite {
   font-style: normal;
 }
 
-
 button {
   cursor: pointer;
   border: none;
@@ -93,4 +92,11 @@ address {
 }
 button {
   background: transparent;
+}
+
+::marker {
+  display: none;
+}
+summary {
+  list-style: none;
 }
