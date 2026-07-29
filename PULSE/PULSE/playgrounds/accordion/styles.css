@@ -1,0 +1,13 @@
+.accordion {
+}
+.accordion__item {
+}
+.accordion__name {
+}
+.accordion__content {
+  display: none;
+}
+
+.accordion__item.is--open .accordion__content {
+  display: block;
+}
