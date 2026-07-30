@@ -2,20 +2,30 @@ console.log("js file has been init");
 
 const accordion = document.querySelector(".accordion");
 
-const accordionItem = document.querySelectorAll(".accordion__item");
+const accordionButton = document.querySelectorAll(".accordion__button");
 
-accordionItem.forEach(accordionButton => {
-  accordionButton.addEventListener("click", event => {
-    const target = event.currentTarget;
-    console.log(" На это кликнули ", target);
+accordionButton.forEach(button => {
+  button.addEventListener("click", event => {
+    const clickedButton = event.currentTarget;
+    console.log(" Это target", clickedButton);
 
-    const openedElement = accordion.querySelector(".accordion__item.is--open");
+    const clickedItem = clickedButton.closest(".accordion__item");
+    // const accordionItem = target.parentElement;
 
-    if (openedElement && openedElement !== target) {
-      openedElement.classList.remove("is--open");
+    console.log("Это родительский элемент таргета ", clickedItem);
+
+    const openedItem = accordion.querySelector(".accordion__item.is--open");
+
+    if (openedItem && openedItem !== clickedItem) {
+      openedItem.classList.remove("is--open");
     }
 
-    target.classList.toggle("is--open");
+    clickedItem.classList.toggle("is--open");
+
+    const isOpen = clickedItem.classList.contains("is--open");
+
+    clickedButton.setAttribute("aria-expanded", String(isOpen));
+
     // console.log(" Открытый пункт ", openedElement);
     // const hasModifier = target.classList.contains("is--open");
     // console.log("Имеет модификатор ", hasModifier);
