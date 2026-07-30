@@ -6,22 +6,14 @@ const accordionItem = document.querySelectorAll(".accordion__item");
 accordionItem.forEach(accordionButton => {
   accordionButton.addEventListener("click", event => {
     const target = event.currentTarget;
-    const targetIsOpen = target.classList.contains("is--open");
+
     const openedItem = accordion.querySelector(".accordion__item.is--open");
 
-    // console.log("Текущий ", target);
-    // console.log("Открытый " + openedItem);
-    // console.log("Текущий открыт: ", targetIsOpen);
-
-    console.log("Открытый и текущий совпадают", openedItem === target);
-
-    // target.classList.toggle("is--open");
-
-    if (target != targetIsOpen) {
-      target.classList.add("is--open");
-    } else if (target === targetIsOpen) {
-      target.classList.remove("is--open");
+    if (openedItem && openedItem !== target) {
+      openedItem.classList.remove("is--open");
     }
+
+    target.classList.toggle("is--open");
   });
 });
 
