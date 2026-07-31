@@ -18,6 +18,10 @@ accordionButton.forEach(button => {
 
     if (openedItem && openedItem !== clickedItem) {
       openedItem.classList.remove("is--open");
+
+      const openedButton = openedItem.querySelector(".accordion__button");
+
+      openedButton.setAttribute("aria-expanded", String(false));
     }
 
     clickedItem.classList.toggle("is--open");
