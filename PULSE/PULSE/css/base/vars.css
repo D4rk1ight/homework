@@ -16,6 +16,7 @@
   --disabled-color: #5d5d56;
   --disabled-glow-color: #5d5d564d;
   --text-color: #979797;
+  --muted-text-color: #5d5d56;
   --shadow-color: #181817;
   --overlay: linear-gradient(rgba(30, 30, 30, 0.9), #000 1810%);
   --overlay-accent: #72320780;
@@ -29,8 +30,6 @@
   /* container */
   --container-width: 1708px;
   --container-padding: 15px;
-
-
 
   /* transitions */
   --transition-time: 0.3s;
