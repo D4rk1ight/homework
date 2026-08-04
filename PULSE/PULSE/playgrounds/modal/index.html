@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sample</title>
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <button>Открыть модалку</button>
+
+    <section class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__window">
+        <button class="modal__close-btn">Закрыть модалку</button>
+        <div class="modal__content">
+          <h2>Заголовок внутри модалки</h2>
+
+          <p>Описание модалки</p>
+        </div>
+        <form class="modal__form" action="">
+          <label for="userName"
+            >Ваше Имя
+            <input
+              type="text"
+              id="userName"
+              placeholder="Иванов Иван Иванович"
+            />
+          </label>
+
+          <label for="phone"
+            >Телефон
+            <input type="tel" id="phone" placeholder="+7" />
+          </label>
+
+          <label for="mail"
+            >Почта
+            <input type="text" id="mail" placeholder="sample@mail.com" />
+          </label>
+        </form>
+        <button class="modal__sent-btn">Отправить форму</button>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

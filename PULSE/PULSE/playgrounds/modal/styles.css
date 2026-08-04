@@ -1,0 +1,40 @@
+body {
+  /* background-color: antiquewhite; */
+  min-height: 100vh;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  isolation: isolate;
+  /* min-height: 200vh; */
+}
+
+.modal__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(221, 212, 212, 0.616);
+  outline: 3px solid lime;
+  z-index: -1;
+  height: 100%;
+}
+
+.modal__window {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  /* margin-inline: auto; */
+  /* margin-top: 40%; */
+  /* padding-top: 60px; */
+  width: 600px;
+  background-color: antiquewhite;
+}
+
+.modal__close-btn {
+}
+.modal__content {
+}
+.modal__form {
+}
+.modal__sent-btn {
+}
