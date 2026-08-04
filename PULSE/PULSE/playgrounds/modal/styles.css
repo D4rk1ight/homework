@@ -1,31 +1,43 @@
 body {
   /* background-color: antiquewhite; */
-  min-height: 100vh;
+  /* min-height: 200vh; */
+  /* overflow: hidden; */
+}
+
+.body--no-scroll {
+  overflow-y: hidden;
 }
 
 .modal {
   position: fixed;
+  overflow: hidden;
   inset: 0;
-  isolation: isolate;
-  /* min-height: 200vh; */
+  /* isolation: isolate; */
+  z-index: 10;
+  /* overflow-y: scroll; */
+  visibility: hidden;
+  opacity: 0;
+}
+
+.modal--open {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__overlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
   background-color: rgba(221, 212, 212, 0.616);
   outline: 3px solid lime;
-  z-index: -1;
-  height: 100%;
+  z-index: 0;
+  /* height: 100%; */
 }
 
 .modal__window {
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-  /* margin-inline: auto; */
-  /* margin-top: 40%; */
-  /* padding-top: 60px; */
+  position: relative;
+  top: 20%;
+  margin-inline: auto;
+  z-index: 1;
   width: 600px;
   background-color: antiquewhite;
 }
