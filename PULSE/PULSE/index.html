@@ -208,7 +208,13 @@
               Ac nec est ultrices varius morbi et non. Donec quam sed eget
               purus. Elementum sed malesuada senectus feugiat.
             </p>
-            <a href="#" class="product__button">READ MORE</a>
+            <button
+              class="product__button"
+              data-modal-button="buy"
+              data-modal-speed="300"
+            >
+              READ MORE
+            </button>
           </div>
           <div class="product__slider">
             <div class="product__slider-shell">
@@ -1279,6 +1285,53 @@
         </div>
       </div>
     </footer>
+
+    <!-- <section class="modal">
+      <div class="modal__window" data-modal-window="buy">
+        <button class="madal__close">x</button>
+        <div class="modal__content modal-buy">
+          <h3 class="modal-buy__title title-md">Оставь обратную связь</h3>
+        </div>
+        <form class="modal-buy__form">
+          <label class="modal-buy__label">
+            <input
+              class="modal-buy__input"
+              type="text"
+              placeholder="Ваше имя"
+              name="name"
+              required=""
+            />
+          </label>
+          <label class="modal-buy__label">
+            <input
+              class="modal-buy__input"
+              type="tel"
+              placeholder="Номер телефона"
+              name="phone"
+              autocomplete="on"
+              required=""
+            />
+          </label>
+          <label class="modal-buy__label">
+            <input
+              class="modal-buy__input"
+              type="email"
+              placeholder="E-mail"
+              name="email"
+              autocomplete="on"
+              required=""
+            />
+          </label>
+          <button class="modal-buy__submit product__buy-button" type="submit">
+            Отправить
+          </button>
+        </form>
+      </div>
+    </section> -->
+
+    
+
+
     <script src="./js/fslightbox.js"></script>
     <script src="./js/accardion-locations.js"></script>
   </body>

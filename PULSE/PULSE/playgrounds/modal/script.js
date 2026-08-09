@@ -7,6 +7,7 @@ const modal = document.querySelector(".modal");
 function closeModal() {
   modal.classList.remove("modal--open");
   document.body.classList.remove("body--no-scroll");
+  openButton.focus();
 }
 
 function openModal() {
@@ -17,31 +18,48 @@ function openModal() {
 
 openButton.addEventListener("click", () => {
   openModal();
+});
 
-  closeButton.addEventListener("click", () => {
-    closeModal();
-    openButton.focus();
-  });
+closeButton.addEventListener("click", () => {
+  closeModal();
+});
 
-  handlerCloseClick();
-  function handlerCloseClick() {
-    document.addEventListener("click", e => {
-      const target = e.target;
-      console.log("Элемент по которому нажали ", target);
+const modalOverlay = document.querySelector(".modal__overlay");
 
-      const hasOverLay = target.classList.contains("modal__overlay");
+modalOverlay.addEventListener("click", e => {
+  closeModal();
+});
 
-      if (hasOverLay) {
-        closeModal();
-      }
+document.addEventListener("keydown", event => {
+  const isEscape = event.key === "Escape";
+  const isModalOpen = modal.classList.contains("modal--open");
 
-      document.addEventListener("keydown", event => {
-        const isEscape = event.key === "Escape";
+  function focusTrap() {
+    const isTab = event.key === "Tab";
+    const isShiftTab = event.shiftKey && event.key === "Tab";
+    const isOnlyTab = isTab && !isShiftTab;
 
-        if (isEscape) {
-          closeModal();
-        }
-      });
-    });
+    const modalButtons = modal.querySelectorAll("button, input");
+
+    const modalFirstButton = modalButtons[0];
+    const modalLastButton = modalButtons[modalButtons.length - 1];
+
+    if (isOnlyTab && document.activeElement === modalLastButton) {
+      event.preventDefault();
+      modalFirstButton.focus();
+    }
+
+    if (document.activeElement === modalFirstButton && isShiftTab) {
+      event.preventDefault();
+      modalLastButton.focus();
+    }
+  }
+
+  if (isModalOpen) {
+    if (isEscape) {
+      closeModal();
+      return;
+    }
+    focusTrap();
   }
 });
