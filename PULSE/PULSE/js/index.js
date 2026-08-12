@@ -2,16 +2,16 @@ import HeaderFixed from "./header.js";
 import BurgerMenu from "./burger.js";
 import { sizesSlider } from "./product-slider.js";
 import { sizes } from "./sizes.js";
-import Modal from "./modal.js";
+// import Modal from "./modal.js";
 import { tabs } from "./tabs.js";
 
-document.addEventListener("click", event => {
-  const link = event.target.closest("a");
+// document.addEventListener("click", event => {
+//   const link = event.target.closest("a");
 
-  if (!link) return;
+//   if (!link) return;
 
-  event.preventDefault();
-});
+//   event.preventDefault();
+// });
 
 const initModule = (name, callback) => {
   try {
@@ -56,9 +56,9 @@ initModule("Product slider", sizesSlider);
 
 initModule("Tabs", tabs);
 
-initModule("Modal", () => {
-  return new Modal({
-    PAGE_BODY: "page__body",
-    PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
-  });
-});
+// initModule("Modal", () => {
+//   return new Modal({
+//     PAGE_BODY: "page__body",
+//     PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
+//   });
+// });

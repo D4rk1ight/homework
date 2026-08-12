@@ -1286,53 +1286,59 @@
       </div>
     </footer>
 
-    <!-- <section class="modal">
-      <div class="modal__window" data-modal-window="buy">
-        <button class="madal__close">x</button>
-        <div class="modal__content modal-buy">
-          <h3 class="modal-buy__title title-md">Оставь обратную связь</h3>
+    <section class="modal">
+      <div class="modal__overlay"></div>
+      <div
+        class="modal__window"
+        role="dialog"
+        aria-labelledby="dialogTitle"
+        aria-describedby="dialogDesc"
+      >
+        <button class="modal__close-btn">xD</button>
+        <div class="modal__content">
+          <h2 class="modal__title">Whey protein</h2>
+          <p class="modal__desc">
+            <strong>Is</strong> a high-quality, fast-absorbing complete protein
+            derived from milk during cheese production. It contains all nine
+            essential amino acids, making it popular for building muscle,
+            repairing body tissue, and aiding post-workout recovery.
+          </p>
         </div>
-        <form class="modal-buy__form">
-          <label class="modal-buy__label">
+
+        <div class="modal__form" action>
+          <label for="userName">
+            Ваше имя
             <input
-              class="modal-buy__input"
+              class="modal__input"
+              id="userName"
               type="text"
-              placeholder="Ваше имя"
-              name="name"
-              required=""
+              placeholder="Ваше ФИО"
             />
           </label>
-          <label class="modal-buy__label">
+          <label for="userPhone">
+            Номер телефона
             <input
-              class="modal-buy__input"
+              class="modal__input"
+              id="userPhone"
               type="tel"
-              placeholder="Номер телефона"
-              name="phone"
-              autocomplete="on"
-              required=""
+              placeholder="+7"
             />
           </label>
-          <label class="modal-buy__label">
+          <label for="userMail">
+            Почта
             <input
-              class="modal-buy__input"
-              type="email"
-              placeholder="E-mail"
-              name="email"
-              autocomplete="on"
-              required=""
+              class="modal__input"
+              id="userMail"
+              type="text"
+              placeholder="sample@mail.com"
             />
           </label>
-          <button class="modal-buy__submit product__buy-button" type="submit">
-            Отправить
-          </button>
-        </form>
+          <button class="modal__sent-btn" type="submit">Оформить заказ</button>
+        </div>
       </div>
-    </section> -->
-
-    
-
-
+    </section>
     <script src="./js/fslightbox.js"></script>
     <script src="./js/accardion-locations.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
