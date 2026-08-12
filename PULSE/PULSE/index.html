@@ -1291,13 +1291,17 @@
       <div
         class="modal__window"
         role="dialog"
-        aria-labelledby="dialogTitle"
-        aria-describedby="dialogDesc"
+        aria-labelledby="dialog-Title"
+        aria-describedby="dialog-Desc"
       >
-        <button class="modal__close-btn">xD</button>
+        <button class="modal__close-btn">
+          <svg width="24" height="24">
+            <use href="./icons/header-controls.svg#cross"></use>
+          </svg>
+        </button>
         <div class="modal__content">
-          <h2 class="modal__title">Whey protein</h2>
-          <p class="modal__desc">
+          <h2 class="modal__title title-lg" id="dialog-Title">Whey protein</h2>
+          <p class="modal__desc" id="dialog-Desc">
             <strong>Is</strong> a high-quality, fast-absorbing complete protein
             derived from milk during cheese production. It contains all nine
             essential amino acids, making it popular for building muscle,
@@ -1306,34 +1310,39 @@
         </div>
 
         <div class="modal__form" action>
-          <label for="userName">
-            Ваше имя
+          <label for="userName" class="modal__label">
             <input
               class="modal__input"
               id="userName"
               type="text"
-              placeholder="Ваше ФИО"
+              placeholder="Ваше имя"
+              required
+              autocomplete="on"
             />
           </label>
-          <label for="userPhone">
-            Номер телефона
+          <label for="userPhone" class="modal__label">
             <input
               class="modal__input"
               id="userPhone"
               type="tel"
               placeholder="+7"
+              required
+              autocomplete="on"
             />
           </label>
-          <label for="userMail">
-            Почта
+          <label for="userMail" class="modal__label">
             <input
               class="modal__input"
               id="userMail"
               type="text"
               placeholder="sample@mail.com"
+              autocomplete="on"
+              required
             />
           </label>
-          <button class="modal__sent-btn" type="submit">Оформить заказ</button>
+          <button class="modal__sent-btn product__button" type="submit">
+            Оформить заказ
+          </button>
         </div>
       </div>
     </section>
