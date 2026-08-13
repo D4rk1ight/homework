@@ -20,7 +20,8 @@
   max-height: 480px;
 } */
 
-.training__item .training__card {
+.training__item:focus-within   {
+  z-index: var(--layer-1);
 }
 
 .training__card {

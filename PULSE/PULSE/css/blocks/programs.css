@@ -1,7 +1,14 @@
 .programs {
   position: relative;
   overflow: hidden;
-  isolation: isolate;
+  max-width: 1920px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* isolation: isolate; */
+}
+
+.programs__timetable:focus-visible {
+  outline-offset: -4px;
 }
 
 .programs::before {
@@ -179,6 +186,12 @@
   transition: color var(--transition-time);
 }
 
+.programs__timetable:focus-visible {
+  outline-offset: -4px;
+  outline-width: 4px;
+  outline-color: var(--main-color);
+}
+
 .programs__arrow {
   color: var(--bg-color);
   transition: color var(--transition-time);
@@ -188,8 +201,7 @@
   .programs__timetable:hover {
     color: var(--main-color);
   }
-  .programs__timetable:hover
-  .programs__arrow {
+  .programs__timetable:hover .programs__arrow {
     color: var(--main-color);
   }
 }
