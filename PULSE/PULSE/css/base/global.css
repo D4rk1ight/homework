@@ -4,7 +4,7 @@
   font-weight: 600;
   color: var(--main-color);
   scroll-behavior: smooth;
-  scroll-padding-top: 98px;
+  scroll-padding-top: 28px;
   scrollbar-gutter: stable;
 }
 

@@ -6,21 +6,19 @@
 }
 .training__list {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit,  960px); */
+
   grid-template-columns: repeat(2, minmax(400px, 1fr));
 }
 
 @media (width <=1231px) {
   .training__list {
     grid-template-columns: 1fr;
+    row-gap: 8px;
+    background-color: var(--disabled-color);
   }
 }
 
-/* .training__item {
-  max-height: 480px;
-} */
-
-.training__item:focus-within   {
+.training__item:focus-within {
   z-index: var(--layer-1);
 }
 
@@ -88,6 +86,8 @@
   .training__content {
     padding-left: clamp(0.625rem, -0.525rem + 4.91vw, 3.25rem);
     padding-right: clamp(1.25rem, -0.365rem + 6.89vw, 4.938rem);
+    padding-top: 128px;
+    padding-bottom: 128px;
   }
 }
 
@@ -114,8 +114,11 @@
 .text-regular {
 }
 .training__button {
+  align-self: start;
   line-height: 1.44;
   letter-spacing: 0.1em;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--accent-color);
 }
 .text-bold {
 }

@@ -7,6 +7,7 @@
   font-family: var(--second-family);
   /* min-width 1024px, max-width 1710px */
   font-size: clamp(20px, 1.063rem + 0.292vi, 22px);
+  text-transform: uppercase;
 }
 .menu__item {
   position: relative;

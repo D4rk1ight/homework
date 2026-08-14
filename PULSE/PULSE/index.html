@@ -19,73 +19,73 @@
     <script src="./js/fslightbox.js" type="module"></script>
     <title>PULSE FITNESS CENTER</title>
   </head>
-  <body class="page__body">
-    <header id="home" class="header">
-      <div class="container header__container">
-        <a class="header__logo" href="#">
-          <img src="./icons/logo.svg" alt="оранжевый логотип компании" />
-        </a>
+  <header class="header">
+    <div class="container header__container">
+      <a class="header__logo" id="home" href="#">
+        <img src="./icons/logo.svg" alt="оранжевый логотип компании" />
+      </a>
 
-        <nav id="home" class="header__menu menu" aria-label="Главное меню">
-          <ul class="menu__list">
-            <li class="menu__item hover-before">
-              <a class="menu__link" href="#home">HOME</a>
-            </li>
-            <li class="menu__item hover-before">
-              <a class="menu__link" href="#catalogs">CATALOGS</a>
-            </li>
-            <li class="menu__item hover-before">
-              <a class="menu__link" href="#blog">BLOG</a>
-            </li>
-            <li class="menu__item hover-before">
-              <a class="menu__link" href="#collections">COLLECTIONS</a>
-            </li>
-            <li class="menu__item hover-before">
-              <a class="menu__link" href="#contacts">CONTACT US</a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="header__menu menu" aria-label="Главное меню">
+        <ul class="menu__list">
+          <li class="menu__item hover-before">
+            <a class="menu__link" href="#programs">PROGRAMS</a>
+          </li>
+          <li class="menu__item hover-before">
+            <a class="menu__link" href="#about">ABOUT</a>
+          </li>
+          <li class="menu__item hover-before">
+            <a class="menu__link" href="#training">TRAINING</a>
+          </li>
+          <li class="menu__item hover-before">
+            <a class="menu__link" href="#locations">LOCATIONS</a>
+          </li>
+          <li class="menu__item hover-before">
+            <a class="menu__link" href="#contacts">CONTACT US</a>
+          </li>
+        </ul>
+      </nav>
 
-        <div class="header__controls">
-          <button
-            class="header__controls-button"
-            title="Корзина товаров"
-            aria-label="Корзина товаров"
-          >
-            <svg class="header__controls-icon" width="38" height="33">
-              <use href="./icons/header-controls.svg#cart"></use>
-            </svg>
-          </button>
+      <div class="header__controls">
+        <button
+          class="header__controls-button"
+          title="Корзина товаров"
+          aria-label="Корзина товаров"
+        >
+          <svg class="header__controls-icon" width="38" height="33">
+            <use href="./icons/header-controls.svg#cart"></use>
+          </svg>
+        </button>
 
-          <button
-            class="header__controls-button"
-            title="Поиск по сайту"
-            aria-label="Поиск по сайту"
-          >
-            <svg class="header__controls-icon" width="29" height="29">
-              <use href="./icons/header-controls.svg#search"></use>
-            </svg>
-          </button>
+        <button
+          class="header__controls-button"
+          title="Поиск по сайту"
+          aria-label="Поиск по сайту"
+        >
+          <svg class="header__controls-icon" width="29" height="29">
+            <use href="./icons/header-controls.svg#search"></use>
+          </svg>
+        </button>
 
-          <button
-            class="header__controls-button burger"
-            title="Меню сайта"
-            aria-label="Меню сайта"
-          >
-            <svg width="25" height="25">
-              <use
-                class="burger__icon-menu"
-                href="./icons/header-controls.svg#burger"
-              ></use>
-              <use
-                class="burger__icon-cross"
-                href="./icons/header-controls.svg#cross"
-              ></use>
-            </svg>
-          </button>
-        </div>
+        <button
+          class="header__controls-button burger"
+          title="Меню сайта"
+          aria-label="Меню сайта"
+        >
+          <svg width="25" height="25">
+            <use
+              class="burger__icon-menu"
+              href="./icons/header-controls.svg#burger"
+            ></use>
+            <use
+              class="burger__icon-cross"
+              href="./icons/header-controls.svg#cross"
+            ></use>
+          </svg>
+        </button>
       </div>
-    </header>
+    </div>
+  </header>
+  <body class="page__body">
     <main class="main">
       <section class="hero hero__container">
         <div class="container">
@@ -212,6 +212,7 @@
               class="product__button"
               data-modal-button="buy"
               data-modal-speed="300"
+              type="button"
             >
               READ MORE
             </button>
@@ -533,7 +534,7 @@
         </div>
       </section>
 
-      <section class="programs">
+      <section class="programs" id="programs">
         <div class="programs__container container">
           <h2 class="programs__title title-sm text-medium">OUR PROGRAMS</h2>
           <p class="programs__subtitle text-regular">
@@ -711,7 +712,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__container container">
           <div class="about__tabs">
             <div class="about__tabs-list">
@@ -879,7 +880,7 @@
         </div>
       </section>
 
-      <section class="training" aria-label="Trainig programs">
+      <section class="training" id="training" aria-label="Trainig programs">
         <div class="training__container container">
           <ul class="training__list">
             <li class="training__item">
@@ -905,9 +906,7 @@
                     Ac nec est ultrices varius morbi et non. Donec quam sed eget
                     purus. Elementum sed
                   </p>
-                  <div class="training__button text-bold" href="#">
-                    READ MORE
-                  </div>
+                  <span class="training__button text-bold">READ MORE</span>
                 </div>
               </a>
             </li>
@@ -934,9 +933,7 @@
                     Ac nec est ultrices varius morbi et non. Donec quam sed eget
                     purus. Elementum sed
                   </p>
-                  <div class="training__button text-bold" href="#">
-                    READ MORE
-                  </div>
+                  <span class="training__button text-bold">READ MORE</span>
                 </div>
               </a>
             </li>
@@ -949,9 +946,7 @@
                     Ac nec est ultrices varius morbi et non. Donec quam sed eget
                     purus. Elementum sed
                   </p>
-                  <div class="training__button text-bold" href="#">
-                    READ MORE
-                  </div>
+                  <span class="training__button text-bold"> READ MORE </span>
                 </div>
                 <picture class="training__picture">
                   <source
@@ -978,9 +973,7 @@
                     Ac nec est ultrices varius morbi et non. Donec quam sed eget
                     purus. Elementum sed
                   </p>
-                  <div class="training__button text-bold" href="#">
-                    READ MORE
-                  </div>
+                  <span class="training__button text-bold"> READ MORE </span>
                 </div>
                 <picture class="training__picture">
                   <source
@@ -1020,7 +1013,7 @@
         </div>
       </section>
 
-      <section class="locations">
+      <section class="locations" id="locations">
         <div class="locations__container container">
           <div class="accordion locations__accordion">
             <h2 class="locations__title title-sm">OUR FITNESS CENTER</h2>
@@ -1032,7 +1025,7 @@
               >
                 <span class="locations__hours">06:00 - 23:00</span>
 
-                <div class="locations__name">Honolulu</div>
+                <span class="locations__name">Honolulu</span>
                 <svg
                   class="accordion__icon"
                   width="21"
@@ -1064,7 +1057,9 @@
               >
                 <span class="locations__hours">06:00 - 23:00</span>
 
-                <div class="locations__name locations__name--accent">Hilo</div>
+                <span class="locations__name locations__name--accent"
+                  >Hilo</span
+                >
                 <svg
                   class="accordion__icon"
                   width="21"
@@ -1097,7 +1092,7 @@
               >
                 <span class="locations__hours">06:00 - 23:00</span>
 
-                <div class="locations__name">Lahaina</div>
+                <span class="locations__name">Lahaina</span>
                 <svg
                   class="accordion__icon"
                   width="21"
@@ -1129,7 +1124,7 @@
               >
                 <span class="locations__hours">06:00 - 23:00</span>
 
-                <div class="locations__name">Kapolei</div>
+                <span class="locations__name">Kapolei</span>
                 <svg
                   class="accordion__icon"
                   width="21"
@@ -1161,7 +1156,7 @@
               >
                 <span class="locations__hours">06:00 - 23:00</span>
 
-                <div class="locations__name">Pearl City</div>
+                <span class="locations__name">Pearl City</span>
                 <svg
                   class="accordion__icon"
                   width="21"
@@ -1189,10 +1184,11 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__info">
-          <a class="footer__logo" href="#">
+          <a class="footer__logo" href="#home">
             <img
               src="./icons/logo.svg"
               width="269"
@@ -1204,9 +1200,9 @@
         </div>
         <div class="footer__content">
           <div class="footer__contacts contacts" id="contacts">
-            <p class="contacts__title text-disabled text-semiBold">
+            <h2 class="contacts__title text-disabled text-semiBold">
               contacts US
-            </p>
+            </h2>
             <a class="contacts__link" href="mailto:hello@pulse.com"
               >hello@pulse.com</a
             >

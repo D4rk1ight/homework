@@ -22,7 +22,9 @@ export const sizesSlider = () => {
       clickable: true,
 
       renderBullet: function (index, className) {
-        return `<span class="${className}">${index + 1}</span>`;
+        return `<button class="${className}"
+        type="button"
+        aria-labe="Перейти к слайду ${index + 1}" >${index + 1}</button>`;
       },
     },
 
