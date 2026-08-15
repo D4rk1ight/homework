@@ -2,23 +2,26 @@ import HeaderFixed from "./header.js";
 import BurgerMenu from "./burger.js";
 import { sizesSlider } from "./product-slider.js";
 import { sizes } from "./sizes.js";
-// import Modal from "./modal.js";
 import { tabs } from "./tabs.js";
+import { accordion } from "./accardion-locations.js";
 
-// document.addEventListener("click", event => {
-//   const link = event.target.closest("a");
-
-//   if (!link) return;
-
-//   event.preventDefault();
-// });
+// const initModule = (name, callback) => {
+//   try {
+//     console.log(`The module ${name} has been initd`);
+//     return callback();
+//   } catch (error) {
+//     console.error(`${name}:`, error);
+//     return null;
+//   }
+// };
 
 const initModule = (name, callback) => {
   try {
+    console.log(`The module ${name} has been initiated`);
     return callback();
   } catch (error) {
-    console.error(`${name}:`, error);
-    return null;
+    console.log(error);
+    
   }
 };
 
@@ -56,9 +59,5 @@ initModule("Product slider", sizesSlider);
 
 initModule("Tabs", tabs);
 
-// initModule("Modal", () => {
-//   return new Modal({
-//     PAGE_BODY: "page__body",
-//     PAGE_BODY_NO_SCROLL: "page__body--no-scroll",
-//   });
-// });
+initModule("Accordion", accordion);
+initModule("Accordion", accordion);

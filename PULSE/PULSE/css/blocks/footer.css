@@ -110,25 +110,6 @@
 }
 
 
-/* only flex version
-@media (width <= 768px) {
-  .footer__content {
-    display: flex;
-    flex-direction: column;
-    row-gap: 60px;
-    text-align: center;
-  }
-
-  .footer__cols {
-    flex-direction: column;
-    row-gap: 40px;
-  }
-
-  .socials__list {
-    justify-content: center;
-  }
-} */
-
 .footer__col-text {
   /* min-width 576px max-width 1710px */
   margin-bottom: clamp(12px, 0.369rem + 1.058vi, 24px);

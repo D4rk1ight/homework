@@ -3,8 +3,7 @@
   max-width: 1920px;
   margin-inline: auto;
 }
-.benefits {
-}
+
 .hero__benefits {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -22,7 +21,6 @@
   isolation: isolate;
 }
 
-/* hover with linear-gradient */
 .benefits__item::before {
   content: "";
   position: absolute;
@@ -65,24 +63,6 @@
     visibility: visible;
   }
 }
-
-/* Hover with height animated */
-/* .benefits__item::before {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  content: "";
-  width: 100%;
-  background-color: #267c9657;
-  height: 0;
-  transition: height var(--transition-time) ease;
-}
-
-@media (any-hover: hover) {
-  .benefits__item:hover::before {
-    height: 100%;
-  }
-} */
 
 .benefits__item-link {
   display: flex;

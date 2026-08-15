@@ -44,10 +44,6 @@
   display: block;
 }
 
-.categories__img {
-  /* overflow: hidden; */
-}
-
 .categories__img img {
   transition: transform var(--transition-time);
 }
@@ -85,13 +81,6 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--bg-color-2);
-  /* z-index: var(--layer-2); */
-  /* 
-  padding-top: 65px;
-  padding-right: 70px;
-  padding-left: 54px;
-  padding-bottom: 60px; */
-  /* padding: 65px 70px 60px 54px; */
   padding: clamp(
       32px,
       calc(32px + (65 - 32) * ((100vw - 375px) / (1710 - 375))),

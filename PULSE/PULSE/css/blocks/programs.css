@@ -4,7 +4,6 @@
   max-width: 1920px;
   left: 50%;
   transform: translateX(-50%);
-  /* isolation: isolate; */
 }
 
 .programs__timetable:focus-visible {
@@ -17,8 +16,6 @@
   left: 50%;
   transform: translateX(-830px);
   top: 95px;
-  /* width: clamp(260px, 40vw, 767px); */
-
   width: 767px;
   height: 767px;
   aspect-ratio: 1;
@@ -36,17 +33,13 @@
 .programs::after {
   position: absolute;
   content: "WITH";
-  /* right: clamp(-180px, -3vw, -46px); */
   left: 50%;
-  /* right: auto; */
   top: -7%;
   transform: translateX(280px);
   font-weight: 600;
-  /* font-size: clamp(112px, 19.2vw, 397px); */
   font-size: 397px;
   color: transparent;
   -webkit-text-stroke: 3px gray;
-  /* line-height: 0.98; */
   z-index: var(--layer-negative);
 }
 
@@ -82,7 +75,6 @@
 
 .programs__item {
   flex: 0 1 374px;
-  /* isolation: isolate; */
 }
 
 .programs__link {
@@ -112,7 +104,6 @@
 }
 
 .programs__img {
-  /* outline: 3px solid; */
   width: 100%;
 }
 

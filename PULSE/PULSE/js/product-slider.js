@@ -24,7 +24,7 @@ export const sizesSlider = () => {
       renderBullet: function (index, className) {
         return `<button class="${className}"
         type="button"
-        aria-labe="Перейти к слайду ${index + 1}" >${index + 1}</button>`;
+        aria-label="Перейти к слайду ${index + 1}" >${index + 1}</button>`;
       },
     },
 
@@ -38,10 +38,4 @@ export const sizesSlider = () => {
       mousewheel: true,
     },
   });
-
-  console.log("Swiper init");
-};
-
-const inintHorizontal = () => {
-  console.log("Directon has been changed to horizontal");
 };

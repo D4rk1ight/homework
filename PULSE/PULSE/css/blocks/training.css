@@ -2,11 +2,8 @@
   --container-width: 1920px;
 }
 
-.training {
-}
 .training__list {
   display: grid;
-
   grid-template-columns: repeat(2, minmax(400px, 1fr));
 }
 
@@ -101,8 +98,7 @@
 .training__title {
   margin-bottom: 10px;
 }
-.text-medium {
-}
+
 .training__text {
   --title-xs: clamp(18px, 0.704rem + 1.8vw, 42px);
   font-size: var(--title-xs);
@@ -111,14 +107,11 @@
   margin-bottom: clamp(10px, 0.527rem + 1.75vw, 30px);
   font-size: clamp(0.75rem, 0.64rem + 0.47vw, 1rem);
 }
-.text-regular {
-}
+
 .training__button {
   align-self: start;
   line-height: 1.44;
   letter-spacing: 0.1em;
   padding-bottom: 10px;
   border-bottom: 2px solid var(--accent-color);
-}
-.text-bold {
 }

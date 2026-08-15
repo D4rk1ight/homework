@@ -10,7 +10,7 @@ accordionButton.forEach(button => {
     console.log(" Это target", clickedButton);
 
     const clickedItem = clickedButton.closest(".accordion__item");
-    // const accordionItem = target.parentElement;
+
 
     console.log("Это родительский элемент таргета ", clickedItem);
 
@@ -30,28 +30,6 @@ accordionButton.forEach(button => {
 
     clickedButton.setAttribute("aria-expanded", String(isOpen));
 
-    // console.log(" Открытый пункт ", openedElement);
-    // const hasModifier = target.classList.contains("is--open");
-    // console.log("Имеет модификатор ", hasModifier);
-
-    // console.log(target === openedElement);
-
-    // console.log(target.classList.contains("accordion__item"));
-
-    // if (!hasModifier) {
-    //   target.classList.add("is--open");
-    // } else {
-    //   target.classList.remove("is--open");
-    // }
-
-    // if (openedElement.matches(".accordion__item.is--open")) {
-    //   openedElement.classList.remove("is--open");
-    // }
-
-    // if (openedElement.matches(".accordion__item.is--open") && !target) {
-    //   openedElement.classList.remove("is--open");
-    // } else {
-    //   target.classList.add("is--open");
-    // }
+  
   });
 });
