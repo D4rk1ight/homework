@@ -1,6 +1,4 @@
 export const accordion = () => {
-  // console.log("accordion location has been init");
-
   const accordion = document.querySelector(".accordion");
   const accordionButton = document.querySelectorAll(".accordion__button");
 

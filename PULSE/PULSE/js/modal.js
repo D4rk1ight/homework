@@ -1,66 +1,69 @@
-console.log("modal file has been loaded");
+export const modal = () => {
+  const openButton = document.querySelector(".product__button");
 
-const openButton = document.querySelector(".product__button");
+  const closeButton = document.querySelector(".modal__close-btn");
+  const modal = document.querySelector(".modal");
 
-const closeButton = document.querySelector(".modal__close-btn");
-const modal = document.querySelector(".modal");
+  function openModal() {
+    modal.classList.add("modal--open");
+    document.body.classList.add("page__body--no-scroll");
 
-function openModal() {
-  modal.classList.add("modal--open");
-  document.body.classList.add("page__body--no-scroll");
-  closeButton.focus();
-}
-
-function closeModal() {
-  modal.classList.remove("modal--open");
-  document.body.classList.remove("page__body--no-scroll");
-  openButton.focus();
-}
-
-openButton.addEventListener("click", () => {
-  openModal();
-});
-
-closeButton.addEventListener("click", () => {
-  closeModal();
-});
-
-const modalOverlay = document.querySelector(".modal__overlay");
-
-modalOverlay.addEventListener("click", e => {
-  closeModal();
-});
-
-document.addEventListener("keydown", event => {
-  const isEscape = event.key === "Escape";
-  const isModalOpen = modal.classList.contains("modal--open");
-
-  function focusTrap() {
-    const isTab = event.key === "Tab";
-    const isShiftTab = event.shiftKey && event.key === "Tab";
-    const isOnlyTab = isTab && !isShiftTab;
-
-    const modalButtons = modal.querySelectorAll("button, input");
-
-    const modalFirstButton = modalButtons[0];
-    const modalLastButton = modalButtons[modalButtons.length - 1];
-
-    if (isOnlyTab && document.activeElement === modalLastButton) {
-      event.preventDefault();
-      modalFirstButton.focus();
-    }
-
-    if (document.activeElement === modalFirstButton && isShiftTab) {
-      event.preventDefault();
-      modalLastButton.focus();
-    }
+    requestAnimationFrame(() => {
+      closeButton.focus();
+    });
   }
 
-  if (isModalOpen) {
-    if (isEscape) {
-      closeModal();
-      return;
-    }
-    focusTrap();
+  function closeModal() {
+    modal.classList.remove("modal--open");
+    document.body.classList.remove("page__body--no-scroll");
+    openButton.focus();
   }
-});
+
+  openButton.addEventListener("click", () => {
+    openModal();
+  });
+
+  closeButton.addEventListener("click", () => {
+    closeModal();
+  });
+
+  const modalOverlay = document.querySelector(".modal__overlay");
+
+  modalOverlay.addEventListener("click", e => {
+    closeModal();
+  });
+
+  document.addEventListener("keydown", event => {
+    const isEscape = event.key === "Escape";
+    const isModalOpen = modal.classList.contains("modal--open");
+
+    function focusTrap() {
+      const isTab = event.key === "Tab";
+      const isShiftTab = event.shiftKey && event.key === "Tab";
+      const isOnlyTab = isTab && !isShiftTab;
+
+      const modalButtons = modal.querySelectorAll("button, input");
+
+      const modalFirstButton = modalButtons[0];
+      const modalLastButton = modalButtons[modalButtons.length - 1];
+
+      if (isOnlyTab && document.activeElement === modalLastButton) {
+        event.preventDefault();
+        modalFirstButton.focus();
+      }
+
+      if (document.activeElement === modalFirstButton && isShiftTab) {
+        event.preventDefault();
+        modalLastButton.focus();
+      }
+    }
+
+    if (isModalOpen) {
+      if (isEscape) {
+        closeModal();
+        return;
+      }
+      focusTrap();
+    }
+  });
+};

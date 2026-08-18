@@ -1,4 +1,4 @@
-export const sizesSlider = () => {
+export const productSlider = () => {
   new Swiper(".swiper", {
     direction: "vertical",
 

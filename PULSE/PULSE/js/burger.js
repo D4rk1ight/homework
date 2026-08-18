@@ -1,10 +1,9 @@
 export default class BurgerMenu {
-  constructor(config, headerFixedInstance = null) {
+  constructor(config) {
     this.config = config;
     this.burgerButton = document.querySelector(`.${this.config.BURGER}`);
     this.burgerMenu = document.querySelector(`.${this.config.HEADER_MENU}`);
     this.body = document.querySelector(`.${this.config.PAGE_BODY}`);
-    this.headerFixedInstance = headerFixedInstance;
     this.main = document.querySelector(`.${this.config.MAIN}`);
 
     if (!this.burgerButton || !this.burgerMenu || !this.body) {
@@ -68,8 +67,8 @@ export default class BurgerMenu {
   onBurgerClick() {
     const isOpen = this.burgerButton.classList.toggle(this.config.BURGER_OPEN);
     this.burgerButton.ariaLabel = isOpen
-      ? this.config.lABEL.CLOSE
-      : this.config.lABEL.OPEN;
+      ? this.config.LABEL.CLOSE
+      : this.config.LABEL.OPEN;
     this.burgerButton.ariaExpanded = isOpen;
     this.burgerMenu.classList.toggle(this.config.HEADER_MENU_OPEN, isOpen);
     this.body.classList.toggle(this.config.PAGE_BODY_NO_SCROLL, isOpen);
@@ -77,30 +76,16 @@ export default class BurgerMenu {
     if (this.main) {
       this.main.style.pointerEvents = isOpen ? "none" : "";
     }
-
-    if (this.headerFixedInstance) {
-      if (isOpen) {
-        this.headerFixedInstance.removeFixedClass();
-      } else {
-        this.headerFixedInstance.updateFixedClass();
-      }
-    }
   }
-
   hideBurgerMenu() {
-    const wasOpen = this.isBurgerMenuOpen();
     this.burgerButton.classList.remove(this.config.BURGER_OPEN);
-    this.burgerButton.ariaLabel = this.config.lABEL.OPEN;
+    this.burgerButton.ariaLabel = this.config.LABEL.OPEN;
     this.burgerButton.ariaExpanded = false;
     this.burgerMenu.classList.remove(this.config.HEADER_MENU_OPEN);
     this.body.classList.remove(this.config.PAGE_BODY_NO_SCROLL);
 
     if (this.main) {
       this.main.style.pointerEvents = "";
-    }
-
-    if (wasOpen && this.headerFixedInstance) {
-      this.headerFixedInstance.updateFixedClass();
     }
   }
 

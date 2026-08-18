@@ -15,8 +15,9 @@
 }
 
 .accordion__item {
-  padding-block: 29px;
-  padding-right: 6px;
+  /* padding-block: 29px;
+  padding-right: 6px; */
+  /* padding-bottom: 29px; */
   border-bottom: 1px solid var(--bg-color);
 }
 
@@ -30,6 +31,9 @@
   grid-template-columns: max-content 1fr auto;
   column-gap: clamp(1rem, -1.182rem + 10.91vw, 7rem);
   width: 100%;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  padding-right: 6px;
   /* column-gap: clamp(2.5rem, 1.423rem + 4.6vw, 6.938rem); */
 }
 
@@ -103,7 +107,7 @@
 }
 
 .accordion__content-body {
-  margin: 2em 3em 0;
+  margin: 0 3em 29px;
   color: var(--bg-color);
 }
 

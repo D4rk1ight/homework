@@ -1,7 +1,3 @@
-.header {
-  inset: 0;
-}
-
 .header__container {
   position: relative;
   display: flex;
@@ -18,6 +14,7 @@
 }
 
 .header__menu {
+  position: sticky;
   flex-shrink: 1;
 }
 
